@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>专业真相卡片 · 高考生必看</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Caveat:wght@500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink-dark:    #1a2640;
+    --ink-mid:     #2d3e55;
+    --ink-light:   #5a6a7e;
+    --sienna:      #a0522d;
+    --sienna-light:#c4783f;
+    --sienna-pale: #f0e0cc;
+    --paper-base:  #f5f0e8;
+    --paper-warm:  #ede7d9;
+    --paper-deep:  #e0d8c8;
+    --cream-white: #faf8f3;
+    --red-seal:    #c0392b;
+    --gold:        #c9972a;
+    --tag-colors: #2d6a4f, #1d4e89, #6b2d8b, #a0522d, #1a535c, #c0392b, #4a4a00, #5d3a1a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background-color: var(--paper-base);
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 27px, rgba(26,38,64,0.04) 28px),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    font-family: 'Noto Serif SC', 'STKaiti', Georgia, serif;
+    color: var(--ink-dark);
+    min-height: 100vh;
+  }
+
+  /* ─── Header ─── */
+  .site-header {
+    background: var(--ink-dark);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--sienna);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+
+  .site-logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .logo-seal {
+    width: 42px; height: 42px;
+    border: 2.5px solid var(--sienna-light);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--sienna-light);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .logo-seal::before {
+    content: '';
+    position: absolute; inset: 3px;
+    border: 1px solid rgba(192,120,63,0.4);
+    border-radius: 50%;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+    color: var(--paper-base);
+    letter-spacing: 3px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .logo-text p {
+    font-size: 11px;
+    color: rgba(245,240,232,0.5);
+    letter-spacing: 2px;
+    font-family: 'Noto Sans SC', sans-serif;
+    margin-top: 3px;
+  }
+
+  .header-badge {
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    color: var(--sienna-light);
+    border: 1.5px dashed var(--sienna-light);
+    padding: 4px 12px;
+    border-radius: 4px;
+    opacity: 0.8;
+  }
+
+  /* ─── Hero Section ─── */
+  .hero {
+    text-align: center;
+    padding: 60px 20px 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '真相';
+    position: absolute;
+    font-size: 280px;
+    font-weight: 900;
+    color: rgba(26,38,64,0.03);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    white-space: nowrap;
+    letter-spacing: -10px;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 12px;
+    color: var(--sienna);
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+  .hero-eyebrow::before, .hero-eyebrow::after {
+    content: '';
+    width: 28px; height: 1px;
+    background: var(--sienna);
+  }
+
+  .hero h2 {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 900;
+    line-height: 1.2;
+    color: var(--ink-dark);
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+  }
+  .hero h2 em {
+    font-style: normal;
+    color: var(--sienna);
+    position: relative;
+  }
+  .hero h2 em::after {
+    content: '';
+    position: absolute;
+    bottom: 2px; left: 0; right: 0;
+    height: 3px;
+    background: var(--sienna-pale);
+    z-index: -1;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    color: var(--ink-light);
+    line-height: 1.8;
+    max-width: 560px;
+    margin: 0 auto 36px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+  }
+
+  .stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .stat-item {
+    text-align: center;
+  }
+  .stat-num {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--sienna);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: var(--ink-light);
+    font-family: 'Noto Sans SC', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+
+  /* ─── Filter Bar ─── */
+  .filter-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 32px;
+  }
+
+  .search-wrap {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto 24px;
+  }
+  .search-icon {
+    position: absolute;
+    left: 16px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--ink-light);
+    font-size: 16px;
+  }
+  .search-input {
+    width: 100%;
+    padding: 12px 16px 12px 44px;
+    background: var(--cream-white);
+    border: 1.5px solid var(--paper-deep);
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--ink-dark);
+    font-family: 'Noto Sans SC', sans-serif;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .search-input:focus {
+    border-color: var(--sienna-light);
+    box-shadow: 0 0 0 3px rgba(160,82,45,0.1);
+  }
+  .search-input::placeholder { color: var(--ink-light); }
+
+  .filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  .filter-btn {
+    padding: 6px 16px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    transition: all .2s;
+    letter-spacing: 0.5px;
+    background: var(--cream-white);
+    color: var(--ink-mid);
+    border-color: var(--paper-deep);
+  }
+  .filter-btn:hover {
+    border-color: var(--sienna-light);
+    color: var(--sienna);
+    background: var(--sienna-pale);
+  }
+  .filter-btn.active {
+    background: var(--ink-dark);
+    color: var(--paper-base);
+    border-color: var(--ink-dark);
+  }
+
+  /* ─── Cards Grid ─── */
+  .cards-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 28px;
+  }
+
+  /* ─── Card ─── */
+  .major-card {
+    background: var(--cream-white);
+    border: 1px solid var(--paper-deep);
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+    transition: transform .25s ease, box-shadow .25s ease;
+    overflow: hidden;
+  }
+  .major-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--category-color, var(--sienna));
+  }
+  .major-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(26,38,64,0.12), 0 4px 12px rgba(26,38,64,0.08);
+  }
+
+  /* Corner stamp */
+  .card-stamp {
+    position: absolute;
+    top: 16px; right: 16px;
+    width: 46px; height: 46px;
+    border: 2px solid rgba(160,82,45,0.25);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px;
+    color: rgba(160,82,45,0.5);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .card-header {
+    padding: 22px 22px 16px;
+    border-bottom: 1px solid var(--paper-warm);
+    position: relative;
+  }
+
+  .card-category-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-family: 'Noto Sans SC', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: var(--category-color, var(--sienna));
+    border: 1px solid var(--category-color, var(--sienna));
+    padding: 2px 8px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    opacity: 0.8;
+  }
+
+  .card-major-name {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--ink-dark);
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    padding-right: 52px;
+  }
+
+  .card-subtitle {
+    font-size: 11px;
+    color: var(--ink-light);
+    font-family: 'Noto Sans SC', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  /* Courses list */
+  .card-courses {
+    padding: 18px 22px 0;
+  }
+
+  .courses-label {
+    font-size: 10px;
+    color: var(--ink-light);
+    font-family: 'Noto Sans SC', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .courses-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--paper-deep);
+  }
+
+  .course-item {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(26,38,64,0.08);
+    align-items: flex-start;
+  }
+  .course-item:last-child { border-bottom: none; }
+
+  .course-num {
+    flex-shrink: 0;
+    width: 22px; height: 22px;
+    background: var(--ink-dark);
+    color: var(--paper-base);
+    font-size: 11px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1px;
+    margin-top: 1px;
+  }
+
+  .course-info { flex: 1; }
+
+  .course-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ink-dark);
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  .course-tasks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+  }
+
+  .task-chip {
+    font-family: 'Caveat', cursive;
+    font-size: 13px;
+    color: var(--sienna-light);
+    background: var(--sienna-pale);
+    padding: 2px 8px;
+    border-radius: 2px;
+    line-height: 1.4;
+    border-left: 2px solid var(--sienna-light);
+    white-space: nowrap;
+  }
+
+  .course-desc {
+    font-size: 12px;
+    color: var(--ink-light);
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: 4px;
+  }
+
+  /* Card footer */
+  .card-footer {
+    padding: 14px 22px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--paper-warm);
+    margin-top: 16px;
+    border-top: 1px solid var(--paper-deep);
+  }
+
+  .card-keyword-list {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .keyword-tag {
+    font-size: 10px;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: var(--ink-light);
+    background: var(--cream-white);
+    border: 1px solid var(--paper-deep);
+    padding: 2px 7px;
+    border-radius: 10px;
+  }
+
+  .card-expand-btn {
+    font-size: 11px;
+    color: var(--sienna);
+    font-family: 'Noto Sans SC', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 500;
+  }
+  .card-expand-btn svg {
+    transition: transform .25s;
+  }
+  .card-expand-btn.expanded svg {
+    transform: rotate(180deg);
+  }
+
+  /* Hidden courses */
+  .courses-extra {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+  }
+  .courses-extra.open {
+    max-height: 600px;
+  }
+
+  /* ─── Modal ─── */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(26,38,64,0.72);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s;
+    backdrop-filter: blur(4px);
+  }
+  .modal-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .modal-box {
+    background: var(--cream-white);
+    border-radius: 2px;
+    max-width: 720px;
+    width: 100%;
+    max-height: 88vh;
+    overflow-y: auto;
+    position: relative;
+    transform: translateY(20px) scale(0.97);
+    transition: transform .3s ease;
+    box-shadow: 0 30px 80px rgba(26,38,64,0.3);
+    border-top: 5px solid var(--modal-category-color, var(--sienna));
+  }
+  .modal-overlay.open .modal-box {
+    transform: translateY(0) scale(1);
+  }
+
+  .modal-header {
+    padding: 30px 36px 22px;
+    border-bottom: 1px solid var(--paper-deep);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    background: linear-gradient(135deg, var(--paper-warm) 0%, var(--cream-white) 100%);
+  }
+
+  .modal-title-block { flex: 1; }
+
+  .modal-category-badge {
+    font-size: 10px;
+    font-family: 'Noto Sans SC', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 1px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--modal-category-color, var(--sienna));
+    border: 1px solid var(--modal-category-color, var(--sienna));
+  }
+
+  .modal-major-name {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--ink-dark);
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+
+  .modal-en-name {
+    font-size: 12px;
+    color: var(--ink-light);
+    font-family: 'Noto Sans SC', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .modal-close {
+    width: 36px; height: 36px;
+    border: 1.5px solid var(--paper-deep);
+    border-radius: 50%;
+    background: var(--cream-white);
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink-light);
+    flex-shrink: 0;
+    transition: all .2s;
+    font-size: 18px;
+    line-height: 1;
+  }
+  .modal-close:hover {
+    background: var(--ink-dark);
+    color: var(--paper-base);
+    border-color: var(--ink-dark);
+  }
+
+  .modal-summary {
+    margin: 0 36px 0;
+    padding: 16px 20px;
+    background: var(--paper-warm);
+    border-left: 3px solid var(--sienna);
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--ink-mid);
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+  }
+
+  .modal-section-title {
+    font-size: 11px;
+    color: var(--ink-light);
+    font-family: 'Noto Sans SC', sans-serif;
+    letter-spacing: 4px;
+    padding: 24px 36px 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--paper-deep);
+    margin: 0 36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .modal-courses {
+    padding: 0 36px 30px;
+  }
+
+  .modal-course-item {
+    padding: 18px 0;
+    border-bottom: 1px dashed rgba(26,38,64,0.1);
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 14px;
+    align-items: start;
+  }
+  .modal-course-item:last-child { border-bottom: none; }
+
+  .modal-course-num {
+    width: 28px; height: 28px;
+    background: var(--sienna);
+    color: white;
+    font-size: 13px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1px;
+    flex-shrink: 0;
+  }
+
+  .modal-course-content {}
+
+  .modal-course-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink-dark);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .modal-task-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+  .modal-task-chip {
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    color: var(--sienna);
+    background: var(--sienna-pale);
+    padding: 3px 12px;
+    border-radius: 2px;
+    border-left: 2px solid var(--sienna);
+  }
+
+  .modal-course-detail {
+    font-size: 13px;
+    color: var(--ink-mid);
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+  .modal-course-detail strong {
+    color: var(--ink-dark);
+    font-weight: 600;
+  }
+
+  .modal-warning {
+    margin: 0 36px 24px;
+    padding: 14px 18px;
+    background: rgba(192,57,43,0.06);
+    border: 1px solid rgba(192,57,43,0.2);
+    border-radius: 2px;
+    font-size: 12px;
+    color: var(--red-seal);
+    font-family: 'Noto Sans SC', sans-serif;
+    line-height: 1.7;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .modal-warning::before {
+    content: '⚠';
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ─── Empty State ─── */
+  .empty-state {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--ink-light);
+    font-family: 'Noto Sans SC', sans-serif;
+  }
+  .empty-state .empty-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    opacity: 0.3;
+  }
+
+  /* ─── Footer ─── */
+  .site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid var(--paper-deep);
+    font-size: 12px;
+    color: var(--ink-light);
+    font-family: 'Noto Sans SC', sans-serif;
+    background: var(--paper-warm);
+  }
+
+  /* ─── Scrollbar ─── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--paper-base); }
+  ::-webkit-scrollbar-thumb { background: var(--paper-deep); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--sienna-light); }
+
+  @media (max-width: 768px) {
+    .site-header { padding: 0 20px; }
+    .header-badge { display: none; }
+    .cards-grid { padding: 0 16px 60px; grid-template-columns: 1fr; }
+    .modal-header { padding: 22px 22px 18px; }
+    .modal-major-name { font-size: 24px; }
+    .modal-courses { padding: 0 22px 24px; }
+    .modal-section-title { padding: 20px 22px 10px; margin: 0 22px; }
+    .modal-summary { margin: 0 22px 0; }
+    .modal-warning { margin: 0 22px 20px; }
+  }
+
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<!-- ─── Header ─── -->
+<header class="site-header">
+  <div class="site-logo">
+    <div class="logo-seal">专业</div>
+    <div class="logo-text">
+      <h1>专业真相卡片</h1>
+      <p>MAJOR TRUTH · 高考生必看</p>
+    </div>
+  </div>
+  <div class="header-badge">真实 · 干货 · 无废话</div>
+</header>
+
+<!-- ─── Hero ─── -->
+<section class="hero">
+  <div class="hero-eyebrow">2026 高考季 · 选专业参考</div>
+  <h2>选专业前，先看看你<em>真正</em>会学什么</h2>
+  <p class="hero-desc">不说套话，不讲简介。这里只有课堂上真实的任务——你要写什么代码、画什么图、做什么实验、背什么条款。</p>
+  <div class="stats-row">
+    <div class="stat-item">
+      <div class="stat-num" id="counter-majors">0</div>
+      <div class="stat-label">个专业</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" id="counter-courses">0</div>
+      <div class="stat-label">门核心课程</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" id="counter-tasks">0</div>
+      <div class="stat-label">个真实任务</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Filter ─── -->
+<section class="filter-section">
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input class="search-input" type="text" id="searchInput" placeholder="搜索专业名称或课程关键词…" oninput="doSearch()">
+  </div>
+  <div class="filter-tags" id="filterTags">
+    <button class="filter-btn active" data-cat="all" onclick="filterByCategory(this,'all')">全部</button>
+  </div>
+</section>
+
+<!-- ─── Cards Grid ─── -->
+<main class="cards-grid" id="cardsGrid"></main>
+
+<!-- ─── Modal ─── -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal-box" id="modalBox">
+    <div class="modal-header">
+      <div class="modal-title-block">
+        <div class="modal-category-badge" id="modalCatBadge"></div>
+        <div class="modal-major-name" id="modalMajorName"></div>
+        <div class="modal-en-name" id="modalEnName"></div>
+      </div>
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    </div>
+    <div class="modal-summary" id="modalSummary"></div>
+    <div class="modal-section-title" id="modalSectionTitle">核心课程 · 真实任务清单</div>
+    <div class="modal-courses" id="modalCourses"></div>
+    <div class="modal-warning" id="modalWarning"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>内容基于全国各高校培养方案 · 在读学生真实反馈综合整理 · 仅供参考</p>
+  <p style="margin-top:6px;opacity:0.6">© 2026 专业真相卡片 · 高考生必看</p>
+</footer>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+// 专业数据库 — 基于真实高校培养方案整理
+// ═══════════════════════════════════════════════════════════
+const MAJORS = [
+  {
+    id: 'iet',
+    name: '国际经济与贸易',
+    enName: 'International Economics & Trade',
+    category: '经管类',
+    categoryColor: '#1d4e89',
+    summary: '别以为这是纯文科。你将花大量时间在数学、统计和数据处理上，同时要用英语完成真实的商业单据。既要懂经济理论，也要能操作贸易软件，是一个"文理交叉"程度很高的专业。',
+    warning: '数学要求高于预期：高等数学（微积分）+ 概率论 + 计量经济学 三门数学课全部必修，部分同学因数学基础薄弱产生较大压力。',
+    courses: [
+      {
+        name: '高等数学 / 概率论与统计学',
+        tasks: ['求极限', '写积分', '做假设检验'],
+        detail: '国贸专业数学课一点也不"水"。高等数学讲微积分，概率论要做t检验、卡方检验。期末考试和理工科共用同一套试卷的学校也不少。这是很多同学入学后最意外的部分。'
+      },
+      {
+        name: 'Python数据分析',
+        tasks: ['写爬虫脚本', '画折线图', '跑回归分析'],
+        detail: '近年绝大多数院校已将Python列为必修。用pandas处理贸易数据，用matplotlib画出口趋势图，用statsmodels做计量回归——你写的是真实代码，不是伪代码，但语法要求比CS专业宽松。'
+      },
+      {
+        name: '国际贸易实务',
+        tasks: ['制商业发票', '填装箱单', '写提单', '做信用证'],
+        detail: '这门课最接地气。你要根据英文合同，手工（或在贸易软件中）制作：商业发票(Commercial Invoice)、装箱单(Packing List)、提单(Bill of Lading)、信用证(L/C)。一张单据的金额、日期、品名错一个字段，在真实业务中就是索赔事故。'
+      },
+      {
+        name: '国际经济学',
+        tasks: ['画供需曲线', '画PPF图', '解读贸易条件变化'],
+        detail: '不只是背理论，要能画图分析：比较优势模型、H-O要素禀赋图、关税的福利效应四边形……期末考试往往要求"给出情景，画图分析并说明图中各区域含义"。'
+      },
+      {
+        name: '计量经济学',
+        tasks: ['跑OLS回归', '看P值', '做Stata/EViews操作'],
+        detail: '用软件（Stata或EViews）处理真实贸易数据，建立多元线性回归模型，解读系数显著性。结课作业通常是：选一个研究问题，找数据，跑模型，写小论文。'
+      },
+      {
+        name: '外贸英语函电',
+        tasks: ['写询盘邮件', '回盘还价', '写索赔函'],
+        detail: '全英文写作课。从询盘(Enquiry)、报盘(Offer)、还盘(Counter-offer)到签约、投诉、索赔，每一个商业场景都有固定格式和表达。语法或用词不当会被扣分，因为这在真实外贸中就是误解来源。'
+      }
+    ],
+    keywords: ['数学', 'Python', '票证', '经济学', '英语写作']
+  },
+  {
+    id: 'cs',
+    name: '计算机科学与技术',
+    enName: 'Computer Science & Technology',
+    category: '工科类',
+    categoryColor: '#2d6a4f',
+    summary: '很多人以为学CS就是"学会用电脑"，实际上你要研究计算机本身如何运作——从电路到操作系统到算法，每一层都要自己动手拆开来看。编程只是入门，"底层原理"才是重点。',
+    warning: '代码量远超预期。大一就开始C语言写底层代码，数据结构课的大作业往往需要独立实现一个完整的系统（如图书管理系统、编译器的词法分析器）。',
+    courses: [
+      {
+        name: '数据结构',
+        tasks: ['手写链表', '实现二叉树', '写排序算法'],
+        detail: '这门课的核心是"自己用代码实现基础数据结构"：链表的增删改查、栈和队列、二叉树的遍历、图的BFS/DFS……不是调库，是从零写。期末大作业通常是实现一个完整的数据管理系统。'
+      },
+      {
+        name: '操作系统',
+        tasks: ['写进程调度器', '实现内存分配', '模拟文件系统'],
+        detail: '用C语言在Linux环境下做实验。你要亲手模拟进程调度算法（FCFS、轮转调度）、实现简单的内存分页管理、写一个迷你文件系统。这门课之后，你才真正理解"计算机是如何同时运行多个程序的"。'
+      },
+      {
+        name: '计算机网络',
+        tasks: ['用Wireshark抓包', '写Socket程序', '配置路由协议'],
+        detail: '抓HTTP/TCP数据包分析协议格式，用Python写一个简单的聊天室（Socket编程），用Cisco模拟器配置OSPF路由……理论和实验交替进行，学完才知道你每次刷网页背后发生了什么。'
+      },
+      {
+        name: '数字逻辑 / 计算机组成原理',
+        tasks: ['画电路逻辑图', '用VHDL/Verilog写硬件描述', '汇编语言编程'],
+        detail: '从门电路（与非门、异或门）开始，逐步构建加法器、ALU。用FPGA开发板进行实物验证，用汇编语言直接控制CPU寄存器。这是CS里最"硬核"的课程，让你理解CPU究竟如何执行一条加法指令。'
+      },
+      {
+        name: '算法设计与分析',
+        tasks: ['分析时间复杂度', '写动态规划代码', '做LeetCode题'],
+        detail: '证明算法的正确性和复杂度（Big-O分析），实现贪心、分治、动态规划、回溯等经典算法。这门课也是互联网大厂技术面试的核心考察内容——你在课上刷的题，就是未来校招面试的内容。'
+      },
+      {
+        name: '编译原理',
+        tasks: ['写词法分析器', '构造语法分析树', '生成中间代码'],
+        detail: '被称为"最难的专业课之一"。你要手写一个简单的编译器前端：识别token（词法分析）、构建语法树（语法分析）、生成中间代码（语义分析）。做完之后，你才真正理解编程语言本身是如何"被翻译"的。'
+      }
+    ],
+    keywords: ['编程', '算法', '操作系统', '网络', '硬件']
+  },
+  {
+    id: 'architecture',
+    name: '建筑学',
+    enName: 'Architecture',
+    category: '工科类',
+    categoryColor: '#2d6a4f',
+    summary: '建筑学是公认的"高强度专业"，通宵画图是常态，不是传说。你要同时具备艺术审美、空间思维和工程计算能力，每一张设计图的背后都是无数轮修改和手绘练习。',
+    warning: '学制通常为5年而非4年。大量时间用于建筑设计课（"大设计"），每学期至少1-2个完整的建筑设计项目，从概念到施工图全流程，通宵赶图是常态。',
+    courses: [
+      {
+        name: '建筑设计（核心主干课）',
+        tasks: ['手绘草图', '做实体模型', '出施工图', '做汇报答辩'],
+        detail: '贯穿5年的核心课。从"设计一间咖啡厅"到"设计一栋图书馆"，你要先画大量概念草图，做1:100或1:50的实体纸板/木块模型，再出平面图、立面图、剖面图、大样图，最后用PPT向评委答辩。每个项目周期4-8周，临近截止日通宵是常态。'
+      },
+      {
+        name: '建筑历史与理论',
+        tasks: ['画历史建筑测绘图', '写建筑评论文章', '分析经典案例'],
+        detail: '从古罗马神庙到包豪斯现代主义，你要能辨认各时期建筑风格，分析其空间逻辑和历史背景。不只是背知识，还要能写出"为什么这栋建筑是好的"——这种批判性写作是建筑学特有的训练。'
+      },
+      {
+        name: '建筑力学 / 建筑结构',
+        tasks: ['算弯矩剪力', '做结构选型', '画节点详图'],
+        detail: '建筑学的理科课。力学要算梁的受力和弯矩图，结构课要为自己的设计选择合理的结构体系（框架/剪力墙/空间网格），并画出关键节点的大样详图。这是确保建筑"能建起来"的基础。'
+      },
+      {
+        name: '计算机辅助设计（CAD/Rhino/Revit）',
+        tasks: ['CAD出施工图', 'Rhino建参数化模型', 'PS/AI做效果图'],
+        detail: 'AutoCAD用来出精确施工图，Rhino用来建曲面模型，Revit用来做BIM建筑信息模型，SketchUp做体量推敲，Photoshop/Illustrator做排版效果图。软件课要求你在规定时间内独立完成一整套图纸，输出文件给老师。'
+      },
+      {
+        name: '城市规划原理',
+        tasks: ['画用地功能分析图', '写规划说明书', '做区域分析'],
+        detail: '从一栋建筑扩展到城市尺度。你要分析地块的容积率、日照间距、交通流线，画用地性质图和分析图，了解建筑师的设计如何受到城市规划法规的约束——这门课之后你会明白为什么某些地方不能建高楼。'
+      }
+    ],
+    keywords: ['手绘', '建模', '施工图', '力学', '通宵']
+  },
+  {
+    id: 'medicine',
+    name: '临床医学',
+    enName: 'Clinical Medicine',
+    category: '医学类',
+    categoryColor: '#c0392b',
+    summary: '医学是公认的高强度、长学制专业（本科5年，临床硕士8年）。课程量极大，需要同时应对理论记忆和实操训练。解剖课要亲手接触遗体，临床见习要独立完成问诊和病历书写。',
+    warning: '学制长、课程重：本科5年只是起点，大部分学生要读到硕士（8年）甚至博士（11年）才能独立行医。前三年基础课量极大，需要极强的记忆力和自律性。',
+    courses: [
+      {
+        name: '系统解剖学 / 局部解剖学',
+        tasks: ['认识200+块骨头', '实地解剖操作', '画神经走行图'],
+        detail: '解剖课分理论和实验。实验课需要对真实遗体（"大体老师"）进行局部解剖操作——切开皮肤、分离肌肉、找到神经血管。一具遗体供4-6名同学共同操作。这门课让你真正理解人体结构，是所有临床课程的基础。'
+      },
+      {
+        name: '生理学 / 病理生理学',
+        tasks: ['写动物实验报告', '分析病案生理机制', '记住大量参数'],
+        detail: '生理学有大量动物实验：给蛙做神经反射实验、给兔子注射药物观察血压变化，之后写实验报告分析数据。病理生理学要分析疾病发生机制——同一个"心衰"患者，你要说清楚从分子水平到器官水平的连锁反应。'
+      },
+      {
+        name: '诊断学',
+        tasks: ['练习叩诊听诊', '写大病历', '做体格检查'],
+        detail: '这是进入临床的第一门"实操课"。你要掌握视触叩听四种查体方法，在模拟人或真实病人身上练习心肺听诊、腹部触诊。结课考试要在规定时间内完成一份完整的"大病历"——主诉、现病史、体检结果、初步诊断、鉴别诊断，一项不能少。'
+      },
+      {
+        name: '内科学 / 外科学',
+        tasks: ['背诊断标准', '做手术基本操作', '写医嘱'],
+        detail: '内科要背大量疾病诊断标准（如心梗的心电图改变、糖尿病的诊断数值）。外科实验室要在猪皮或动物模型上练习切开缝合、打手术结、消毒铺巾——这些动作在真实手术中必须形成肌肉记忆，不能思考才能操作。'
+      },
+      {
+        name: '临床见习 / 实习',
+        tasks: ['独立问诊', '写住院病历', '参加晨交班', '跟手术'],
+        detail: '进入医院后，你要独立问诊患者并书写完整入院病历，参加每天早晨的床旁查房和科室交班，跟入手术室观摩（后期参与操作）。真实的患者不像教科书，他们的症状往往不典型，需要你综合判断。'
+      }
+    ],
+    keywords: ['解剖', '实验', '背诵', '病历', '临床']
+  },
+  {
+    id: 'law',
+    name: '法学',
+    enName: 'Law / Juris Doctor',
+    category: '文科类',
+    categoryColor: '#6b2d8b',
+    summary: '法学绝不只是背法条。你要用法律思维分析真实案例，参加模拟法庭扮演律师，写出有逻辑的法律意见书。大量阅读和严密论证是日常，能背不能用，在考试中同样得不了分。',
+    warning: '阅读量极大：每门课每周都有大量判例和法学论文需要阅读，需要很强的文字理解和逻辑分析能力。法学考研竞争激烈，建议提前规划。',
+    courses: [
+      {
+        name: '民法学',
+        tasks: ['分析合同案例', '写法律意见书', '做案例答题'],
+        detail: '民法是法学的基础核心课。学完物权、合同、侵权三大块之后，期末考试往往是一道超长案例题——给你一段情景描述，要求你识别法律关系、援引具体条款、分析各方权利义务。背法条只是起点，会"讲道理"才是重点。'
+      },
+      {
+        name: '刑法学',
+        tasks: ['分析犯罪构成', '区分罪与非罪', '写无罪辩护意见'],
+        detail: '刑法的核心训练是：给你一个行为，用四要件（主体/主观/客体/客观）分析它是否构成犯罪，构成哪个罪名，量刑幅度如何。很多案例故意设计"争议点"，考察你区分故意伤害与故意杀人、正当防卫与防卫过当的能力。'
+      },
+      {
+        name: '模拟法庭',
+        tasks: ['写开庭陈述', '当庭交叉询问', '做结案辩论'],
+        detail: '分组扮演原告/被告/律师/法官，针对一个真实判决案例进行完整庭审模拟。你需要提前写好开庭陈述、准备证据目录、设计交叉质询问题。当庭辩论不允许看稿，对方律师可以随时提出异议，你要即时应对。'
+      },
+      {
+        name: '法理学',
+        tasks: ['写法学论文', '分析立法目的', '论述法律解释方法'],
+        detail: '最"哲学"的法学课。讨论"什么是法律""法律与道德的边界""当法律条文本身有漏洞时该怎么解释"。期末通常要写一篇5000字以上的小论文，要求文献引用规范、逻辑链条完整。这也是培养法律人思维方式的核心课程。'
+      },
+      {
+        name: '诉讼法学（民诉/刑诉）',
+        tasks: ['写起诉状', '设计诉讼策略', '分析程序违法'],
+        detail: '实体法讲"是非对错"，程序法讲"怎么打官司"。你要能写出格式规范的民事起诉状，了解证据的合法性要件（非法证据如何排除），分析一个案件在程序上是否存在瑕疵。这门课让你理解：有理不一定能赢，程序也可以决定结果。'
+      }
+    ],
+    keywords: ['案例分析', '法条', '模拟庭', '论文', '逻辑']
+  },
+  {
+    id: 'econ',
+    name: '经济学',
+    enName: 'Economics',
+    category: '经管类',
+    categoryColor: '#1d4e89',
+    summary: '经济学是数学驱动的社会科学。你不是在学"赚钱的方法"，而是用数学模型分析资源配置。微积分、线性代数、概率论是必修基础，学到计量经济学时要自己用软件跑数据分析。',
+    warning: '数学要求是最常被低估的痛点。高等数学、线性代数、概率论缺一不可，大二开始的"中级微观/宏观经济学"使用大量偏微分和矩阵运算，纯文科背景的同学需提前补数学。',
+    courses: [
+      {
+        name: '微观经济学',
+        tasks: ['画供需曲线', '求效用最大化', '分析均衡变动'],
+        detail: '用数学（微积分）分析消费者和企业的决策。消费者效用最大化要用拉格朗日乘数法，企业利润最大化要求导数为零，市场均衡要画图分析价格弹性。中级微观开始全面使用数学工具，和高中经济学"背概念"完全不同。'
+      },
+      {
+        name: '宏观经济学',
+        tasks: ['建IS-LM模型', '分析政策效果', '画AS-AD图'],
+        detail: '研究整体经济：GDP、通货膨胀、失业、货币政策。你要用IS-LM模型分析财政政策和货币政策的效果，画AD-AS图解释经济波动，用增长模型分析长期经济增长的决定因素。所有结论都要通过模型和图形推导，不能只是"感觉上应该这样"。'
+      },
+      {
+        name: '计量经济学',
+        tasks: ['跑回归分析', '用Stata/R处理数据', '写实证论文'],
+        detail: '经济学的"实验课"。用Stata或R软件处理真实数据集，建立线性回归模型，检验变量间的因果关系，处理异方差、自相关、多重共线性等问题。期末要独立完成一篇实证研究小论文——从提出研究问题到数据处理到结果解释，全流程自己做。'
+      },
+      {
+        name: '博弈论',
+        tasks: ['求纳什均衡', '分析囚徒困境', '构建博弈树'],
+        detail: '分析策略互动：当结果取决于多方决策时，各方的最优选择是什么？用正规式和扩展式博弈建模，求纯策略和混合策略纳什均衡。这门课让你用经济学逻辑分析谈判、拍卖、寡头竞争……甚至国际关系。'
+      },
+      {
+        name: '中国经济学',
+        tasks: ['分析政策文件', '解读统计数据', '写政策分析报告'],
+        detail: '结合中国改革开放历史和当前政策，分析土地制度、财税体制、对外开放等议题。作业通常要求读一份真实的政策文件（如五年规划），结合经济学理论写分析报告，既考察理论功底，也考察对中国实情的理解。'
+      }
+    ],
+    keywords: ['数学', '模型', '计量', 'Stata', '政策']
+  },
+  {
+    id: 'psych',
+    name: '心理学',
+    enName: 'Psychology',
+    category: '文科类',
+    categoryColor: '#6b2d8b',
+    summary: '心理学不是算命，也不是误解人。你要做大量实验，用E-Prime编程设计实验范式，用SPSS做数据分析，写符合APA格式的实验报告。这是一个“实证科学”而非心灵读本的专业，数学和统计学不可少。',
+    warning: '心理和心理学是两个领域：如果想做动力卡和心理和谴，心理学专业不是计师。想做心理和谴必须读研（临床心理学确证实习需要硬条件），本科就业方向主要是测评、人力资源和科研助理。',
+    courses: [
+      {
+        name: '普通心理学 / 实验心理学',
+        tasks: ['设计实验范式', '用E-Prime编程', '写APA实验报告'],
+        detail: '心理学的入门课与教育心理学不同，天天都是实验和数据。用E-Prime编程设计南秀-斯特鲁普、反应时间范式等认知实验，进行被试数据收集和统计。实验报告必须按照APA第7版格式：摘要、引言、方法、结果、讨论全部标准化。'
+      },
+      {
+        name: '心理统计学 / SPSS实操',
+        tasks: ['跑方差分析', '做相关回归', '理解效量和NSH'],
+        detail: '心理统计不只是跑SPSS，要理解统计检验背后的逻辑：为什么用t检验而非方差检验？滞対关系和因果关系的区别。还要学习效量尺寸（Cohen’s d）和样本量计算，确保实验有足够的统计检验力。'
+      },
+      {
+        name: '发展心理学',
+        tasks: ['做儿童观察记录', '设计纵向研究', '分析依恋类型'],
+        detail: '人类从婴儿到老年的心理变化规律。督察实验要用标准化测验清单（如贝莱婴儿发展量表）评估儿童发展水平，并记录行为观察。陈达三山实验考察依恋类型：安全型、回避型、抗拒型，要理解这种连接常常与早期养育经历相关。'
+      },
+      {
+        name: '心理测量学',
+        tasks: ['编制问卷量表', '做信效度分析', '验证量表的构延效度'],
+        detail: '心理学独有的方法论课程。你要学会编制分量和行为评定量表，用Cronbach’sα系数检验内部一致性，用探索性因素分析和验证性因素分析证明构延效度。这门课后，你就能评判暴论上流传的心理测验题是否真的有效度。'
+      },
+      {
+        name: '社会心理学 / 认知心理学',
+        tasks: ['分析偏见源', '设计双盲实验', '研究认知误差'],
+        detail: '社会心理学研究人在社会情境下的心理和行为：为什么人们会服从周围群体？沉默的螺旋为什么让少数意见销声匿迹？认知心理学研究心智的内在过程：记忆编码、提取、注意分配、决策制定。这两门课都要用实验数据说话，不能只靠直觉下结论。'
+      }
+    ],
+    keywords: ['统计', '实验', 'SPSS', '文献', '量表']
+  },
+  {
+    id: 'marketing',
+    name: '市场营销',
+    enName: 'Marketing',
+    category: '经管类',
+    categoryColor: '#1d4e89',
+    summary: '市场营销不是“学怎么卖东西”。你要学消费者心理研究、数据分析、品牌策略和数字营销。近年要求数据分析能力（SPSS/Python）+渠道运营，不再是纯粹的设计与传播，数字化元素比重越来越重。',
+    warning: '实操项目越来越重要：仅局限于理论的同学就业竞争力弱。第二课堂是各种营销策划竞赛（如双十一活动策划、新消费品牌大赛等），建议大二就开始找市场方向实习，积累真实项目经历。',
+    courses: [
+      {
+        name: '市场营销学原理',
+        tasks: ['做STP市场分析', '设计4P策略方案', '写营销计划书'],
+        detail: '核心是市场分析框架：分割（Segmentation）→选择目标市场（Targeting）→定位（Positioning）+4P（产品/价格/渠道/促销）。期末考试常是给一个真实公司（如小米进入某海外市场），要求你用STP+4P框架写出完整的市场进入方案并预测风险。'
+      },
+      {
+        name: '消费者行为学',
+        tasks: ['库拉梯等级就需分析', '设计消费者调查问卷', '分析购买决策过程'],
+        detail: '从马斯洛需求层次到消费者心理查评模型，分析消费者购买决策背后的心理机制。课上要用调查问卷和焦点小组收集用户洟察，结合SPSS进行因子分析，提炼出影响该类为品购买行为的关键洟察，并给出市场建议。'
+      },
+      {
+        name: '数字营销 / 社交媒体运营',
+        tasks: ['做SEO优化分析', '运营公众号内容', '分析数据看板'],
+        detail: '以真实平台为实验场魔。搜索引擎优化课要分析关键词流量、经展王且的站内链接结构、页面加载速度对转化率的影响。公众号运营课要平均每周产出一篇图文推文并分析阅读、监听、转发、点赞等指标，优化内容策略。'
+      },
+      {
+        name: '市场调查 / 营销数据分析',
+        tasks: ['设计调查方案', '用Python做爱达分析', '输出市场洟察报告'],
+        detail: '不只要会设计问卷，还要学会用数据说话。用Python的Pingouin库或SPSS做联合分析（Conjoint Analysis）衡量消费者对不同产品属性的偏好权重，用爱达分析模定最优产品组合。结课报告要求包含完整的调查设计、数据分析和可执行的市场建议。'
+      },
+      {
+        name: '品牌管理 / 中国市场营销',
+        tasks: ['案例分析品牌定位', '设计品牌延伸方案', '写品牌危机处理计划'],
+        detail: '以真实品牌等为案例，分析其品牌定位、廾快策略和品牌延伸逻辑。中国市场营销课重点分析国内市场特征：下沉市场消费行为差异、平台生态流量逐年转变、私域流量巨头的影响力。这门课是和实际商业世界联系最紧密的课程之一。'
+      }
+    ],
+    keywords: ['消费者', '数据分析', '品牌', '平台', 'STP']
+  },
+  {
+    id: 'biotech',
+    name: '生物技术',
+    enName: 'Biotechnology',
+    category: '理科类',
+    categoryColor: '#1a535c',
+    summary: '生物技术是理论与实验并重的专业，实验课占比极高，你要在真实的实验室里操作细胞、提取DNA、跑电泳，同时要读大量英文文献，更新速度极快的前沿知识也需要持续跟进。',
+    warning: '本科就业空间相对有限，大多数高质量岗位（科研、药企研发）需要硕士及以上学历。建议尽早确定是否走科研路线，提早联系导师参与课题。',
+    courses: [
+      {
+        name: '分子生物学',
+        tasks: ['提取DNA/RNA', '做PCR扩增', '跑琼脂糖电泳'],
+        detail: '生物技术的核心实验技能。你要在P1/P2实验室里真正操作：用CTAB法提取植物DNA，用PCR仪扩增目的基因，用琼脂糖凝胶电泳验证扩增结果，拍照后用ImageJ软件分析条带。这些操作是后续几乎所有生物实验的基础。'
+      },
+      {
+        name: '细胞生物学',
+        tasks: ['培养细胞', '做荧光显微镜观察', '分析细胞周期'],
+        detail: '在超净台里传代培养哺乳动物细胞系，用荧光显微镜观察细胞器标记和细胞运动，用流式细胞仪分析细胞周期和凋亡比例。细胞培养要求极严格的无菌操作，一次污染可能导致数周的工作前功尽弃。'
+      },
+      {
+        name: '基因工程',
+        tasks: ['构建重组质粒', '转化大肠杆菌', '筛选阳性克隆'],
+        detail: '把外源基因"剪切粘贴"进细菌，让细菌表达目标蛋白——这就是基因工程的核心逻辑。实验课要真正操作：用限制酶切割DNA，连接进载体质粒，转化大肠杆菌，蓝白斑筛选阳性克隆，最后送测序验证结果。这个过程需要极高的耐心和严谨性。'
+      },
+      {
+        name: '生物化学',
+        tasks: ['测定蛋白质浓度', '做酶活力测定', '跑SDS-PAGE'],
+        detail: '研究生命体的化学组成和生化反应。实验课要用Bradford法或BCA法测蛋白浓度，通过比色法测定酶的活力，用SDS-PAGE聚丙烯酰胺凝胶电泳分离蛋白质，最后做Western blot检测特定蛋白的表达——这套技术组合是整个生物医学研究的日常工具。'
+      },
+      {
+        name: '生物信息学',
+        tasks: ['用BLAST比对序列', '用Python分析基因组数据', '可视化表达谱'],
+        detail: '用计算机分析生物大数据。在NCBI数据库中检索基因序列，用BLAST做同源性比对，用Python/R处理高通量测序数据，用聚类热图可视化基因表达谱。这门课越来越重要，现代生物研究几乎都需要计算分析能力。'
+      }
+    ],
+    keywords: ['实验', 'PCR', '细胞', '基因', '生信']
+  },
+  {
+    id: 'nursing',
+    name: '护理学',
+    enName: 'Nursing',
+    category: '医学类',
+    categoryColor: '#c0392b',
+    summary: '护理学既有大量医学理论，也有极强的实操技能要求。从打针抽血到危重患者的病情观察，每一项操作都需要反复练习到熟练。临床实习占整个学制相当大的比重。',
+    warning: '护理学以女生为主，但男生就业优势明显。临床实习工作量大，排班不规律，需要提前做好心理准备。注册护士执照考试是毕业后工作的必要门槛。',
+    courses: [
+      {
+        name: '基础护理学',
+        tasks: ['练静脉穿刺', '铺备用床', '导尿操作'],
+        detail: '护理学最核心的实操课。在护理操作实验室用模型反复练习：静脉留置针穿刺（要求一针见血）、鼻饲管插入、导尿管插管、肌肉注射、各种铺床法……每项操作有严格的步骤和消毒规范，考核时一步出错扣分，体现对患者安全的极高要求。'
+      },
+      {
+        name: '内科护理学 / 外科护理学',
+        tasks: ['写护理计划', '实施护理评估', '进行健康宣教'],
+        detail: '学习各类疾病的护理要点：糖尿病患者的血糖监测和胰岛素注射，心衰患者的液体管理，骨折术后患者的功能锻炼指导……考核方式通常是给一个病例，要求制定护理诊断、护理目标和护理措施，写出完整的护理计划。'
+      },
+      {
+        name: '健康评估',
+        tasks: ['做系统体格检查', '写护理病历', '分析化验结果'],
+        detail: '护士版本的"诊断学"。学习如何对患者进行系统全面的评估：生命体征测量、全身体格检查、心理社会评估。结课考核要求在规定时间内，对真实或模拟患者完成完整的健康评估并书写护理病历，包括护理诊断的优先排序。'
+      },
+      {
+        name: '急救护理学',
+        tasks: ['做CPR心肺复苏', '使用AED', '配合急救团队'],
+        detail: '心脏骤停的抢救流程要烂熟于心，胸外按压的频率（100-120次/分）、深度（5-6cm）、手法都要在模拟人上反复练习达标，并学会使用AED（自动体外除颤仪）。批量伤员处置、休克急救、创伤急救也是重要内容，这门课直接关乎患者生死。'
+      },
+      {
+        name: '护理管理学',
+        tasks: ['写工作流程', '做护理质量评价', '分析护理不良事件'],
+        detail: '了解病房护理管理的运行机制：护士排班原则、护理质量标准、医疗不良事件的分析和防范。学会用鱼骨图分析护理差错的根本原因，制定改进方案。这门课让你理解：优质的护理工作需要系统性的管理支撑，而不只是个人技能。'
+      }
+    ],
+    keywords: ['穿刺', '护理计划', 'CPR', '临床', '病历']
+  },
+  {
+    id: 'accounting',
+    name: '会计学',
+    enName: 'Accounting',
+    category: '经管类',
+    categoryColor: '#1d4e89',
+    summary: '会计学不是"记账"那么简单。你要掌握借贷记账法、做财务报表，还要用用友ERP等真实财务软件完成企业全流程核算。数学要求不低，高等数学和统计学是必修，审计课要学会识别财务造假。',
+    warning: '手工账实训是很多同学头疼的起点：从原始凭证到记账凭证、明细账、总账、报表，全套手工流程要独立完成，容不得一笔错误——因为任何一处不平就要全部翻查。',
+    courses: [
+      {
+        name: '基础会计 / 财务会计',
+        tasks: ['做借贷分录', '登记账本', '编资产负债表', '编利润表'],
+        detail: '从零开始学借贷记账法。给你一批原始凭证（发票、收据、合同），你要逐笔判断借贷方向、金额，编制记账凭证，登记明细账和总账，最后汇总出资产负债表和利润表。一笔分录借贷不平，整套账就差错，必须逐行翻查。'
+      },
+      {
+        name: '成本会计',
+        tasks: ['计算产品成本', '做成本分配表', '分析差异原因'],
+        detail: '工业企业背景下，计算一批产品从原材料投入到完工入库的完整成本：直接材料、直接人工、制造费用如何归集和分配。期末考试常给一张生产数据表，要求算出"本月完工产品单位成本"，差一分都会连锁扣分。'
+      },
+      {
+        name: '审计学',
+        tasks: ['看财务报表找异常', '写审计底稿', '识别舞弊迹象'],
+        detail: '从审计师视角重新审视财务报表。你要学会用分析性程序识别数字异常（如应收账款周转率突然变差），设计审计程序，填写工作底稿。课上会讨论真实上市公司财务造假案例（如康美药业），分析舞弊是如何被发现的。'
+      },
+      {
+        name: '财务软件实操（用友ERP）',
+        tasks: ['建账套', '录凭证', '生成报表', '做工资核算'],
+        detail: '用友U8或畅捷通软件的全套操作：新建账套、设置科目体系、批量录入凭证、生成各类账簿和报表、完成工资发放和固定资产折旧的系统处理。这是会计岗位入职最基础的技能要求，实训课会给一整套模拟企业数据让你独立完成。'
+      },
+      {
+        name: '税法 / 纳税申报',
+        tasks: ['算增值税', '填申报表', '计算企业所得税'],
+        detail: '学完理论后要上增值税发票综合服务平台进行模拟申报。计算销项税额、进项税额、应纳税额，填写增值税申报表，同时理解企业所得税的税前扣除项目。这门课和CPA考试高度重叠，学好了考证事半功倍。'
+      }
+    ],
+    keywords: ['做账', '报表', '审计', 'ERP', '税法']
+  },
+  {
+    id: 'finance',
+    name: '金融学',
+    enName: 'Finance',
+    category: '经管类',
+    categoryColor: '#1d4e89',
+    summary: '金融学不等于炒股。你要学大量数学（微积分、线性代数、概率论），用Excel和Python做金融建模，研究利率定价、期权估值、风险控制。能不能赚钱不是考核标准，"逻辑自洽的分析报告"才是。',
+    warning: '数学门槛比大多数人预期的高：高等数学、线性代数、概率论与数理统计全部必修，部分高校还要求金融数学/随机过程。文科背景同学需提前做好数学补强准备。',
+    courses: [
+      {
+        name: '金融学原理 / 货币银行学',
+        tasks: ['分析货币政策效果', '画IS-LM图', '写政策评论'],
+        detail: '不是讲"怎么赚钱"，而是讲货币、信用、利率、汇率的运行机制。IS-LM模型、购买力平价、货币乘数……期末考试是："央行降准50BP，请用IS-LM图分析对GDP和利率的短期影响"，必须画图+文字双重论证。'
+      },
+      {
+        name: '公司金融',
+        tasks: ['做DCF估值', '算WACC', '分析融资决策'],
+        detail: '核心是企业价值评估。给你一家公司的财务数据，用Excel建DCF（现金流折现）模型，计算加权平均资本成本（WACC），得出理论股价。结课项目通常是选一家A股上市公司写完整估值报告，分析其当前市价是高估还是低估。'
+      },
+      {
+        name: '金融工程 / 衍生品定价',
+        tasks: ['用B-S公式算期权价格', '做二叉树定价模型', '理解Greeks'],
+        detail: 'Black-Scholes期权定价公式是核心。你要用Excel实现B-S模型计算欧式期权理论价格，理解Delta、Gamma、Theta等希腊字母的含义，并用二叉树模型对美式期权定价。数学要求高，偏微分方程的推导是选学但必须理解结论。'
+      },
+      {
+        name: '计量经济学 / 金融数据分析',
+        tasks: ['用Python跑时间序列', '做GARCH模型', '分析收益率波动'],
+        detail: '用Python的statsmodels或R对股票收益率数据建模：单位根检验、协整分析、ARIMA预测、GARCH波动率模型。期末作业通常要求：选取某资产价格序列，建立预测模型并进行样本外预测，用统计指标评估模型精度。'
+      },
+      {
+        name: '投资学 / 证券分析',
+        tasks: ['做股票组合优化', '算夏普比率', '写投资分析报告'],
+        detail: 'Markowitz均值-方差模型、CAPM、有效前沿……用Excel构建多资产投资组合，计算预期收益率和标准差，画出有效前沿曲线，找最优风险资产组合。结课大作业：设计一个模拟基金，写完整的投资策略说明书和绩效评估报告。'
+      }
+    ],
+    keywords: ['数学', '建模', 'Excel', '估值', '期权']
+  },
+  {
+    id: 'civil',
+    name: '土木工程',
+    enName: 'Civil Engineering',
+    category: '工科类',
+    categoryColor: '#2d6a4f',
+    summary: '土木工程是被公认的"最累工科专业"之一。理论课要做大量力学计算，实验课要亲手测试混凝土试件，课程设计要出完整施工图纸。就业主要面向建筑施工、设计院和政府基础设施部门。',
+    warning: '课程量极大且高度连贯：理力→材力→结构力学→钢结构/混凝土结构，每一门都是下一门的前提，掉队一科会导致后续课程全线吃力。同时制图和软件课也不能忽视。',
+    courses: [
+      {
+        name: '理论力学 / 材料力学',
+        tasks: ['画受力分析图', '算支座反力', '画弯矩剪力图'],
+        detail: '这两门是土木的地基。理论力学分析静定结构的平衡，材料力学计算杆件的内力和变形。期末考试是给出一个结构简图，要求：求出各支座反力→画出内力图（弯矩图、剪力图、轴力图）。作图精度要求高，漏画一根线就会失分。'
+      },
+      {
+        name: '钢筋混凝土结构',
+        tasks: ['计算梁的配筋', '设计柱截面', '画配筋施工图'],
+        detail: '给定荷载条件和跨度，按规范计算梁的弯矩设计值，确定混凝土强度等级和钢筋规格，最后画出配筋大样图。这门课直接和工程实践接轨——你在图上画的每一根钢筋，都是真实建筑里要用到的。'
+      },
+      {
+        name: '土力学 / 基础工程',
+        tasks: ['做土工试验', '计算地基承载力', '设计桩基础'],
+        detail: '实验课要亲手对土样进行直剪试验、压缩试验，测定土的抗剪强度指标和压缩模量。之后在此基础上计算建筑物的地基沉降量和极限承载力，判断是否需要做桩基础，并进行桩基选型和设计计算。'
+      },
+      {
+        name: '建筑材料实验',
+        tasks: ['做混凝土试块', '测抗压强度', '做钢材拉伸试验'],
+        detail: '亲手制作标准混凝土试块（150mm立方体），养护28天后放入压力试验机压到破坏，记录破坏荷载、计算抗压强度、与设计强度等级对比。钢材拉伸试验在万能试验机上进行，读取屈服强度和极限强度，画出应力-应变曲线。'
+      },
+      {
+        name: 'AutoCAD工程制图 / 施工组织设计',
+        tasks: ['用CAD画结构施工图', '编施工进度横道图', '写施工方案'],
+        detail: '用AutoCAD绘制完整的结构施工图（平面、立面、剖面、节点大样），图纸需符合国家制图标准（线宽、图例、尺寸标注）。施工组织设计课要为一个实际工程项目编写完整施工方案：施工工序→时间安排→资源配置，并用Project软件绘制甘特图。'
+      }
+    ],
+    keywords: ['力学', '混凝土', '施工图', '实验', 'CAD']
+  },
+  {
+    id: 'electrical',
+    name: '电气工程及其自动化',
+    enName: 'Electrical Engineering & Automation',
+    category: '工科类',
+    categoryColor: '#2d6a4f',
+    summary: '电气工程既要做电路理论计算，也要在实验台上焊接电路板、调试单片机，还要用MATLAB做仿真。这是一个"软硬兼施"的专业——既要写代码，也要拿万用表量电压，同时高等数学和信号处理要求极高。',
+    warning: '数学密度高：高等数学、线性代数、复变函数（拉普拉斯变换、傅里叶变换）全是核心工具，大量电路分析和信号处理问题都依赖这些数学。逃不掉，也绕不开。',
+    courses: [
+      {
+        name: '电路分析',
+        tasks: ['算节点电压', '用KVL/KCL解复杂电路', '做频率响应分析'],
+        detail: '不是简单的欧姆定律，是系统性的电路求解方法：节点电压法、网格电流法、戴维南定理、叠加定理……后半学期进入交流电路，用相量法分析阻抗，算功率因数。实验课要在面包板上搭真实电路，用示波器观察波形，用万用表测量验证。'
+      },
+      {
+        name: '模拟电子技术 / 数字电子技术',
+        tasks: ['设计放大器电路', '用Multisim仿真', '用逻辑门实现功能'],
+        detail: '模电要设计三极管放大电路：计算静态工作点、确定偏置电阻，用Multisim软件仿真后在实验台上搭接真实电路，用示波器测量增益和失真。数电要用74系列逻辑芯片在面包板上实现：加法器、计数器、译码器，最后整合成一个简单的数字系统。'
+      },
+      {
+        name: '单片机原理与应用',
+        tasks: ['写C51程序', '控制LED流水灯', '做温度报警器'],
+        detail: '用C语言为51单片机或STM32编写程序，控制硬件外设：点亮LED灯、让数码管显示数字、读取温度传感器数值并显示。期末项目通常是独立完成一个小系统：如"温度报警器"——读取传感器→判断阈值→驱动蜂鸣器，硬件软件全部自己搞定。'
+      },
+      {
+        name: '电力系统分析',
+        tasks: ['算潮流分布', '分析短路电流', '做电网稳定性分析'],
+        detail: '分析真实电力网络的运行状态。用牛顿-拉夫逊法进行潮流计算（确定各节点电压和各线路功率分布），分析三相短路和不对称短路的电流大小，判断系统在扰动后能否恢复稳定。用MATLAB/PSASP软件做电网仿真是标配实验。'
+      },
+      {
+        name: '自动控制原理',
+        tasks: ['画系统框图', '设计PID控制器', '用MATLAB做Bode图'],
+        detail: '控制论的核心课程。分析闭环控制系统的稳定性（劳斯判据、奈奎斯特判据），设计PID控制器参数使系统满足性能指标（超调量、调节时间）。用MATLAB画出系统的Bode图和根轨迹图，并仿真验证控制效果。被誉为"电气最烧脑的理论课"。'
+      }
+    ],
+    keywords: ['电路', '单片机', 'MATLAB', '实验', '控制']
+  },
+  {
+    id: 'journalism',
+    name: '新闻学',
+    enName: 'Journalism',
+    category: '文科类',
+    categoryColor: '#6b2d8b',
+    summary: '新闻学不只是写文章。你要上摄影课、视频剪辑课、数据新闻课，还要在真实新闻机构实习。采访、写稿、剪片、发布，一整套生产流程都要亲历。近年还加入了Python数据抓取和新媒体运营内容。',
+    warning: '"写作好"只是基础门槛，不是全部能力。现在的新闻专业要求你同时具备：文字写作+摄影摄像+视频剪辑+数据分析+社交媒体运营能力，全媒体记者的培养目标让课程密度超出预期。',
+    courses: [
+      {
+        name: '新闻采访与写作',
+        tasks: ['做真实人物采访', '写消息/通讯', '按截稿时间交稿'],
+        detail: '不是虚构写作，是真实采访。你要预约、联系、约访真实的人（校内外均可），完成至少30分钟录音采访，然后在规定时间内（有时是2小时）将采访内容整理成一篇符合新闻格式的消息或通讯稿。截稿时间是硬指标，过时不候。'
+      },
+      {
+        name: '摄影与摄像',
+        tasks: ['手动控制曝光三角', '拍专题图片故事', '剪辑新闻短片'],
+        detail: '从光圈、快门、ISO的手动控制开始，到用RAW格式拍摄并在Lightroom中调色，最后完成一组具有叙事性的专题摄影。视频课要拍摄并剪辑一条2-3分钟的新闻短片：出镜记者+同期声采访+配音+字幕，在Premiere中独立完成全部后期。'
+      },
+      {
+        name: '数据新闻 / 媒体融合',
+        tasks: ['用Python爬取新闻数据', '做可视化图表', '分析舆情走势'],
+        detail: '用Python爬取微博/微信公众号数据，对热点话题进行词频分析和情感分析，用ECharts或Flourish制作交互式数据可视化图表，发布在网页上。这是传统新闻学和计算机技术的交叉地带，也是近年就业市场最稀缺的新闻人才类型。'
+      },
+      {
+        name: '新闻伦理与法规',
+        tasks: ['分析真实侵权案例', '写采访授权书', '模拟新闻投诉处理'],
+        detail: '以真实的新闻官司为案例（如人物报道引发的名誉权纠纷、隐私权侵权），分析媒体是否尽到注意义务。学习如何规范使用采访录音（需获得授权），如何处理匿名消息源，以及新闻报道中的利益冲突如何规避。'
+      },
+      {
+        name: '媒体实习（真实媒体机构）',
+        tasks: ['完成每日选题策划', '发布真实报道', '接受编辑审稿修改'],
+        detail: '大三通常有一段6-8周的媒体实习，进入真实的报社、广播台、新媒体机构或政府新闻办公室。你需要每天参加编前会、完成分配的报道任务、提交稿件接受编辑修改，发布的内容真实对外呈现。实习单位对报道质量的要求丝毫不会因为你是学生而降低。'
+      }
+    ],
+    keywords: ['采访', '写作', '摄影', '剪辑', '数据']
+  },
+  {
+    id: 'chinese',
+    name: '汉语言文学',
+    enName: 'Chinese Language & Literature',
+    category: '文科类',
+    categoryColor: '#6b2d8b',
+    summary: '汉语言文学不是"读读书、写写文章"那么轻松。古代汉语要背大量文言文语法和通假字，语言学要做语料库分析，文学评论要有严密的论证逻辑。同时现代汉语语法分析的精细程度会让很多人意外。',
+    warning: '"语文好"和"学好汉语言文学"之间有很大的距离。古代汉语的语法分析（词类活用、句式判断）比高中文言文难度高出一个数量级，语言学的音位、形位分析也需要全新的思维方式。',
+    courses: [
+      {
+        name: '古代汉语',
+        tasks: ['断句翻译文言文', '分析词类活用', '辨别通假字和古今字'],
+        detail: '远比高中文言文系统和精细。你要掌握上古汉语的完整语法体系：词类活用的判断（名词用作动词、使动用法、意动用法）、各类句式（判断句、倒装句、被动句的多种类型）、词义演变规律。考试是给出一段先秦文献（《左传》《孟子》等），要求句句翻译并标注语法现象。'
+      },
+      {
+        name: '现代汉语',
+        tasks: ['做语音音位分析', '分析句子成分', '辨别多义歧义句'],
+        detail: '不是学"写好普通话"，是从语言学角度分析汉语的声调系统、音节结构、词类划分、句子成分。最让同学头疼的是"歧义句分析"和"层次分析法"——用二叉树状图对一个句子做切分，找出所有可能的理解方式，并解释歧义来源。'
+      },
+      {
+        name: '中国古代文学史',
+        tasks: ['精读原典原著', '写文学评论', '做专题学术报告'],
+        detail: '从《诗经》到清代小说，按时代梳理中国文学发展脉络。不只是背代表作和作者，要能分析：为什么这个时期会出现这种文学形式？这位作家的风格在文学史上的意义是什么？结课作业通常是选一个作家或文学现象，写一篇有文献支撑的学术小论文（3000-5000字）。'
+      },
+      {
+        name: '语言学概论',
+        tasks: ['分析音位对立', '做词根词缀分析', '比较语言类型'],
+        detail: '从普通语言学视角审视人类语言的共同规律。音韵学要分析汉语声调的区别性特征，构词学要对词语进行形态分析，语言类型学要对比汉语与英语、日语在语法结构上的根本差异。很多同学反映这门课"颠覆了对语言的认知"。'
+      },
+      {
+        name: '写作学 / 文秘写作',
+        tasks: ['写公文格式通知', '写新闻稿', '做文学创作练习'],
+        detail: '分为应用文写作和文学创作两个方向。应用文写作要严格按照国家公文格式标准写通知、报告、函件，格式错误直接扣分。文学创作课则鼓励写小说、散文或诗歌，并在课堂上进行小组互评——你写的东西要被同学和老师公开点评，需要一定的心理承受力。'
+      }
+    ],
+    keywords: ['古汉语', '文学史', '文言文', '语言学', '论文写作']
+  },
+  {
+    id: 'mechanical',
+    name: '机械工程',
+    enName: 'Mechanical Engineering',
+    category: '工科类',
+    categoryColor: '#2d6a4f',
+    summary: '机械工程是最传统的工科之一，但绝非"修机器"那么简单。你要学会用CAD/SolidWorks建三维模型，在实验室做材料力学实验，用数控机床加工真实零件，还要用有限元软件分析结构强度。',
+    warning: '制图课是公认的"劝退第一关"：工程图纸的三视图、剖视图、标注规范极为繁琐，一张完整的零件图要符合数十条国家标准，初学者往往要花大量时间才能画得合格。',
+    courses: [
+      {
+        name: '工程制图 / 机械制图',
+        tasks: ['画三视图', '做剖视图', '标注公差配合'],
+        detail: '从投影原理到标准化工程图纸全流程。给出一个三维零件，你要用铅笔和尺规（或CAD）画出符合GB标准的三视图、局部剖视图，标注尺寸、公差、表面粗糙度。一张合格的零件图需要满足：视图选择合理、尺寸不多不少、标注位置规范——任何一项不达标都要重画。'
+      },
+      {
+        name: '材料力学',
+        tasks: ['计算拉压扭弯应力', '画内力图', '做疲劳寿命分析'],
+        detail: '计算机械零件在各种载荷下的内力和应力：轴的扭矩图、梁的弯矩图、压杆稳定性判断。实验课要在试验机上对铸铁和低碳钢试样做拉伸试验，测出屈服点和断裂点，画出应力-应变曲线，与理论值对比分析误差来源。'
+      },
+      {
+        name: '机械原理 / 机械设计',
+        tasks: ['设计齿轮传动系统', '做凸轮机构运动分析', '画装配图'],
+        detail: '机械原理分析各种机构的运动规律：凸轮机构的从动件位移曲线、齿轮传动的啮合条件、连杆机构的速度和加速度分析。机械设计课要对一个实际机械（如减速器）进行完整的设计计算：选电机→确定传动比→计算轴的直径→校核轴承→画出装配图，是一套完整的工程设计训练。'
+      },
+      {
+        name: '数控加工 / 机械制造工艺',
+        tasks: ['编写数控加工程序', '操作车床/铣床', '制定工艺路线'],
+        detail: '工艺课的核心是"如何把一张图纸变成真实零件"：选择加工方法、确定工序顺序、设计夹具、计算切削用量。实习课要亲手操作车床、铣床、数控加工中心，按图纸加工出一个实际的金属零件（如轴类、齿轮类），零件的尺寸精度用卡尺和量规检验。'
+      },
+      {
+        name: 'SolidWorks / ANSYS有限元分析',
+        tasks: ['三维建模', '做有限元网格划分', '分析应力云图'],
+        detail: '用SolidWorks完成零件三维建模和装配体设计，然后导入ANSYS进行有限元分析：划分网格、施加载荷和约束、计算结构的应力分布和变形量，用彩色云图显示危险区域。这套流程是现代工程设计的标准验证手段，实际工作中和课程训练高度一致。'
+      }
+    ],
+    keywords: ['制图', '力学', '加工', 'SolidWorks', '数控']
+  },
+  {
+    id: 'pharmacy',
+    name: '药学',
+    enName: 'Pharmacy',
+    category: '医学类',
+    categoryColor: '#c0392b',
+    summary: '药学比很多人想象的更靠近化学。你要做大量有机合成实验，用分析仪器（高效液相色谱、紫外分光光度计）测定药物含量，学习药物在人体内的吸收代谢过程，还要了解新药研发的完整流程。',
+    warning: '有机化学是药学的核心基础，也是最难翻过的坎。有机合成的反应机理、立体化学（手性药物）、光谱解析（NMR/MS/IR）是贯穿全专业的必备技能，有机化学薄弱的同学在药学会非常吃力。',
+    courses: [
+      {
+        name: '有机化学 / 有机化学实验',
+        tasks: ['做有机合成反应', '蒸馏提纯产物', '用TLC监测反应进程'],
+        detail: '药学的有机化学比化学系的更强调合成应用。实验课要独立完成有机合成：精确称量反应物、控制反应温度和时间、做薄层色谱（TLC）判断反应是否完成、通过蒸馏/重结晶纯化产物、计算产率。一个实验从开始到结束往往要4-6小时，中间不能离开。'
+      },
+      {
+        name: '药物化学',
+        tasks: ['分析药物构效关系', '设计先导化合物', '推断代谢产物结构'],
+        detail: '研究化学结构与药理活性的关系。给你一个已知药物（如阿司匹林、青霉素），分析哪些结构片段是活性必须的、哪些可以改造以提高疗效或降低副作用。期末考试常见题型：给出一个新化合物结构，预测它可能的作用靶点和代谢途径。'
+      },
+      {
+        name: '药物分析',
+        tasks: ['用HPLC测含量', '做溶出度实验', '写检验报告'],
+        detail: '按照中国药典的标准方法对药品进行质量检验。用高效液相色谱（HPLC）测定片剂中主成分含量，用溶出仪做缓释片的溶出度测试，用紫外分光光度计做光谱鉴别。最后按标准格式填写完整的检验原始记录和检验报告书——这与真实药厂QC岗位的工作内容完全一致。'
+      },
+      {
+        name: '药理学',
+        tasks: ['做动物给药实验', '记录药效指标', '分析量效关系'],
+        detail: '研究药物在机体内的作用规律。实验课在小鼠或大鼠身上进行：腹腔注射镇痛药观察扭体反应次数，记录不同剂量组的数据，绘制量效曲线，计算ED50（半数有效量）。实验报告要求完整的统计学分析和图表，单纯描述现象是不够的。'
+      },
+      {
+        name: '药剂学',
+        tasks: ['制备片剂/胶囊', '测溶出度', '研究处方优化'],
+        detail: '把药物做成各种剂型的科学。实验课要亲手压制片剂：选辅料→混合造粒→压片→包薄膜衣，然后测硬度、脆碎度、重量差异是否符合药典标准。缓控释制剂课上还要设计处方、优化参数，使药物在规定时间内按预期速率释放——这是工业化生产的核心技术。'
+      }
+    ],
+    keywords: ['有机化学', 'HPLC', '合成', '药理', '实验']
+  },
+  {
+    id: 'math',
+    name: '数学与应用数学',
+    enName: 'Mathematics & Applied Mathematics',
+    category: '理科类',
+    categoryColor: '#1a535c',
+    summary: '数学专业的核心是严格的逻辑证明，而非计算。你要学会写数学证明（epsilon-delta语言、反证法、归纳法），"从公理出发推导出一切"是这个专业的思维训练核心。计算能力不是重点，严密性才是。',
+    warning: '数学专业的课程和高中、竞赛数学在思维方式上有根本差异：高中侧重"算对答案"，大学数学侧重"证明为什么成立"。很多数学竞赛拿过奖的同学在实分析课上也会感到吃力。',
+    courses: [
+      {
+        name: '数学分析（高级微积分）',
+        tasks: ['用ε-δ语言写极限证明', '证明函数一致连续', '构造反例'],
+        detail: '这是数学专业的第一道关卡。不再是"用公式求极限"，而是"用ε-δ定义严格证明极限存在且等于某值"。你要证明函数的连续性、可微性、可积性，每一个结论都必须从定义出发，步步推导，不能跳步。考试常见"证明或举反例"题型，需要严密的逻辑和创造性思维。'
+      },
+      {
+        name: '高等代数（线性代数进阶）',
+        tasks: ['证明向量空间定理', '做抽象代数结构分析', '求Jordan标准形'],
+        detail: '远超工科线性代数的深度。从抽象向量空间的公理出发，证明基和维数的存在性，分析线性映射的核与像，求矩阵的Jordan标准形。考试不是"解方程组"，而是"证明某个映射是线性映射"或"判断某集合是否构成域并证明"。'
+      },
+      {
+        name: '实变函数 / 泛函分析',
+        tasks: ['理解Lebesgue测度', '证明收敛定理', '分析Banach空间性质'],
+        detail: '数学专业公认最抽象的课程。Lebesgue积分从测度论出发重建了积分的定义，需要理解"几乎处处""可测集"等概念。证明的每一步都要严格引用定理，不能有任何直觉跳跃。这门课之后，你才真正理解为什么"黎曼积分不够用"以及现代分析学的基础是什么。'
+      },
+      {
+        name: '常微分方程 / 偏微分方程',
+        tasks: ['求通解特解', '分析稳定性', '用分离变量法解PDE'],
+        detail: '常微分方程要掌握各类方程的求解方法（变量分离、积分因子、幂级数解法），并用相平面分析判断平衡点的稳定性。偏微分方程要用分离变量法解三类典型方程（热方程、波方程、拉普拉斯方程），理解傅里叶级数在PDE求解中的核心地位。'
+      },
+      {
+        name: '概率论与数理统计（数学系版本）',
+        tasks: ['写严格概率证明', '推导分布函数', '做参数估计量优良性证明'],
+        detail: '和经管类的概率统计有本质区别：不是"套公式算概率"，而是从公理化概率体系（Kolmogorov公理）出发，严格证明各概率定理，推导各分布的特征函数和矩母函数，证明估计量的无偏性和一致性。这门课和数学分析高度融合，分析工具不可或缺。'
+      }
+    ],
+    keywords: ['证明', '抽象代数', '实分析', '严密性', '逻辑']
+  },
+  {
+    id: 'software',
+    name: '软件工程',
+    enName: 'Software Engineering',
+    category: '工科类',
+    categoryColor: '#2d6a4f',
+    summary: '软件工程和计算机科学的区别在于：CS更重底层原理，SE更重系统开发实践。你要学需求分析、架构设计、项目管理，每学期都有团队大作业——真实开发一个软件系统，从设计文档到代码到测试全流程走通。',
+    warning: '团队协作是核心考核维度。每学期的大项目都需要4-6人团队分工合作，用Git做版本控制、写设计文档、做迭代演示。会写代码但不会沟通协作的同学在SE课程中会遇到很大挑战。',
+    courses: [
+      {
+        name: '软件工程导论 / 需求工程',
+        tasks: ['写用例图', '做需求调研访谈', '输出SRS文档'],
+        detail: '这门课让你理解"在写代码之前还有大量工作要做"。你要对虚拟或真实的客户进行需求访谈，提炼功能需求和非功能需求，画UML用例图和活动图，最终输出一份格式规范的软件需求规格说明书（SRS）。文档质量和逻辑清晰度是评分重点，而不是代码。'
+      },
+      {
+        name: '软件架构与设计模式',
+        tasks: ['画系统架构图', '应用设计模式重构代码', '做架构决策分析'],
+        detail: '学习23种经典设计模式（工厂、单例、观察者、策略……），在真实代码中识别和应用。期末大作业是：拿到一段"烂代码"，分析其存在的设计问题，选择合适的设计模式进行重构，并用UML类图展示重构前后的架构变化，说明重构的理由。'
+      },
+      {
+        name: '数据库系统 / SQL开发',
+        tasks: ['设计ER图', '写复杂SQL查询', '做数据库性能优化'],
+        detail: '不只是"会用SELECT"，要做完整的数据库设计：从业务需求出发画ER图，规范化到3NF，建表并设计索引策略。进阶课要写存储过程、触发器，分析慢查询的执行计划，通过加索引或改写SQL将某条查询从10秒优化到0.1秒。这些是后端开发岗位的核心技能。'
+      },
+      {
+        name: '软件测试',
+        tasks: ['写单元测试用例', '做接口测试', '编写自动化测试脚本'],
+        detail: '从黑盒/白盒测试的理论到实际操作：用JUnit写单元测试，用Postman对接口进行功能测试，用Selenium写UI自动化测试脚本。课程作业是对同组同学写的代码进行完整测试，找出Bug并提交缺陷报告——测试课让你第一次真正从"破坏者"视角审视代码。'
+      },
+      {
+        name: '项目综合实训（全流程开发）',
+        tasks: ['用Git协作开发', '做迭代Scrum冲刺', '写项目答辩PPT'],
+        detail: '最能体现SE和CS区别的课程。4-6人团队，选定一个真实系统（校园应用、电商平台等），按照敏捷开发流程进行2-3轮迭代冲刺：每轮两周，先开计划会、分工、开发、测试、最后做演示。全程用Git管理代码，期末做完整的系统演示和项目总结答辩。'
+      }
+    ],
+    keywords: ['需求分析', '设计模式', '数据库', '测试', 'Git协作']
+  },
+  {
+    id: 'education',
+    name: '教育学',
+    enName: 'Education',
+    category: '文科类',
+    categoryColor: '#6b2d8b',
+    summary: '教育学不只是"当老师"。你要学习教育心理学、课程设计、教育研究方法，还要做真实课堂观察和教学实习。师范方向需要大量微格教学和试讲练习，非师范方向则侧重教育政策分析和学术研究。',
+    warning: '教育学≠容易毕业：师范生要完成至少一学期的完整教学实习，非师范生要写规范的实证研究论文。很多学校对普通话等级证书有硬性要求（二级甲等以上），否则无法获得教师资格证。',
+    courses: [
+      {
+        name: '教育心理学',
+        tasks: ['分析学习动机理论', '设计课堂激励策略', '做认知发展案例分析'],
+        detail: '不是泛泛而谈的“心理学”，而是专门针对学习过程的心理学：皮亚杰的认知发展阶段论、维果茨基的最近发展区、班杜拉的自我效能感……期末考试是给出一个真实课堂情景，要求用理论解释学生行为并提出干预方案。'
+      },
+      {
+        name: '课程与教学论',
+        tasks: ['设计单元教案', '做教学目标分类', '写教学反思日志'],
+        detail: '核心技能是“如何把知识转化为可教的内容”。你要按布鲁姆认知目标分类法设定每节课的教学目标，设计教学活动序列，编写完整教案。课后要写教学反思：哪些环节有效、哪些失败、下次如何改进——这种反思习惯是教师专业成长的核心。'
+      },
+      {
+        name: '微格教学 / 教学技能训练',
+        tasks: ['录课并回看自评', '接受同伴互评', '反复修改教学设计'],
+        detail: '每次试讲10-15分钟，全程录像。讲完后回看视频，对照评价量表逐项自评，然后接受同学和老师的点评反馈。常见的评价维度包括：导入技巧、提问层次、板书设计、时间控制、师生互动。一轮下来往往要反复修改3-5次才能达到合格标准。'
+      },
+      {
+        name: '教育研究方法',
+        tasks: ['设计问卷', '做访谈编码', '写实证研究报告'],
+        detail: '教育学作为一门学科，必须有实证研究能力。你要学会设计调查问卷、进行半结构化访谈、对质性数据进行编码分析，或用SPSS对量化数据做描述统计和相关分析。结课作业通常是一篇完整的实证研究小论文，格式参照学术期刊规范。'
+      },
+      {
+        name: '教育实习（真实学校）',
+        tasks: ['独立上课', '批改作业', '参加教研活动', '写实习总结'],
+        detail: '进入中小学进行为期8-16周的全职实习。从听课、备课到独立上课，每周至少上6-8节课，同时承担班主任助理工作。指导老师会听你的课并给出书面评价，实习结束要提交完整的实习手册和教学反思报告。这段经历直接决定你能否拿到教师资格证。'
+      }
+    ],
+    keywords: ['教案', '微格教学', '实习', '心理学', '研究方法']
+  },
+  {
+    id: 'environmental',
+    name: '环境工程',
+    enName: 'Environmental Engineering',
+    category: '工科类',
+    categoryColor: '#2d6a4f',
+    summary: '环境工程是用工程技术手段解决污染问题。你要做水质检测实验、设计污水处理工艺流程、计算污染物去除效率，还要学习环境法规和环境影响评价方法。这是一个化学+生物+工程的交叉专业。',
+    warning: '实验课密度极高：水污染控制、大气污染控制、固废处理三门主干课都有配套实验，每周实验室时间是固定的。同时环境法规和政策更新频繁，需要持续关注行业动态。',
+    courses: [
+      {
+        name: '水污染控制工程',
+        tasks: ['测定COD/BOD', '设计活性污泥工艺', '算污泥负荷'],
+        detail: '核心是污水处理技术。实验课要做水质全分析：化学需氧量（COD）、生化需氧量（BOD）、氨氮、总磷的测定，每个指标都有严格的操作规程。设计课要给一个真实的城镇污水厂项目，计算处理规模、选择工艺路线、确定曝气池容积和二沉池面积，画出工艺流程图。'
+      },
+      {
+        name: '环境监测',
+        tasks: ['采集水样/气样', '用仪器分析污染物', '写监测报告'],
+        detail: '学习各类环境介质的采样和分析方法。水样采集要注意保存条件和运输时限，大气采样要用吸收液或吸附管捕获污染物，土壤样品要做前处理消解。之后用原子吸收光谱仪、气相色谱等仪器测定重金属、有机物含量，最后按国家标准格式出具监测报告。'
+      },
+      {
+        name: '环境影响评价',
+        tasks: ['编制环评报告书', '做公众参与调查', '预测环境影响'],
+        detail: '按照《环境影响评价法》和技术导则，为一个建设项目编制环评报告：识别污染源→预测排放浓度→评估对周边环境的影响→提出污染防治措施。这门课直接对接环评工程师职业资格，学完可以参与真实的环评项目。'
+      },
+      {
+        name: '大气污染控制工程',
+        tasks: ['设计除尘系统', '计算脱硫效率', '做烟气扩散模拟'],
+        detail: '学习工业废气治理技术：布袋除尘器选型、湿法脱硫工艺设计、SCR脱硝催化剂配置。课程设计通常是给一个燃煤电厂或化工厂的烟气参数，设计一套完整的废气处理系统，计算各设备的尺寸和处理效率，画出设备布置图和工艺流程图。'
+      },
+      {
+        name: '固体废物处理与处置',
+        tasks: ['做垃圾成分分析', '设计填埋场', '计算渗滤液产生量'],
+        detail: '生活垃圾、工业固废、危险废物的分类、收集、运输、处理和处置全流程。实验课要对城市生活垃圾做物理组成分析（厨余、塑料、纸张、金属等的占比），在此基础上设计垃圾分类收运方案和末端处理设施。填埋场设计要考虑防渗层结构和渗滤液收集系统。'
+      }
+    ],
+    keywords: ['水质检测', '污水处理', '环评', '实验', '工程设计']
+  },
+  {
+    id: 'agriculture',
+    name: '农学',
+    enName: 'Agronomy',
+    category: '农林类',
+    categoryColor: '#4a4a00',
+    summary: '农学远不止“种地”。你要学生物化学、植物生理学、遗传育种学，在试验田里做作物栽培实验，用分子生物学手段研究基因功能，还要掌握农业大数据和精准农业技术。现代农业是高科技密集型行业。',
+    warning: '田间实习是必修课，不是选修：播种、施肥、病虫害调查、测产，每个生长季节都要下地。夏天烈日、雨天泥泞是常态，怕晒怕累的同学需要提前有心理准备。',
+    courses: [
+      {
+        name: '作物栽培学',
+        tasks: ['做田间小区试验', '测定产量构成因素', '写栽培技术方案'],
+        detail: '在试验田里设置不同处理（品种×密度×施肥量），定期观测株高、叶面积指数、分蘖数，收获时逐小区测产、考种（千粒重、穗粒数）。所有数据要统计分析，写出完整的试验报告。这门课让你理解“为什么同样的种子在不同条件下产量差异巨大”。'
+      },
+      {
+        name: '植物生理学',
+        tasks: ['测光合速率', '做叶绿素提取实验', '分析水分胁迫响应'],
+        detail: '用便携式光合仪测定叶片的光合速率和气孔导度，用分光光度计测定叶绿素含量，用压力室法测定叶片水势。实验数据处理要用Excel或R做统计分析，画出响应曲线。这门课是理解作物高产机理的理论基础。'
+      },
+      {
+        name: '遗传学 / 作物育种学',
+        tasks: ['做杂交授粉', '分析分离比', '选育新品种'],
+        detail: '遗传学要验证孟德尔定律：用玉米或豌豆做杂交实验，统计F2代性状分离比，做卡方检验判断是否符合预期。育种学要在田间选择优良单株，连续多代自交纯化，最终育成稳定的新品系。一个育种周期通常需要5-8年，课程中做的是其中的关键环节。'
+      },
+      {
+        name: '土壤学 / 植物营养学',
+        tasks: ['测定土壤理化性质', '制定施肥方案', '分析养分平衡'],
+        detail: '采集不同深度的土壤样品，测定pH、有机质、速效氮磷钾含量，根据作物需肥规律和土壤供肥能力制定施肥配方。实验课要做土壤剖面观察，识别土层结构和质地类型。这门课直接关系到“如何科学施肥、减少面源污染”。'
+      },
+      {
+        name: '农业信息技术 / 精准农业',
+        tasks: ['用无人机遥感监测', '做GIS空间分析', '建立产量预测模型'],
+        detail: '现代农学的技术前沿。用无人机搭载多光谱相机获取作物长势影像，在ArcGIS中做NDVI植被指数分析，结合气象和土壤数据建立产量预测模型。这门课让农学从“经验驱动”转向“数据驱动”，也是智慧农业方向的核心技能。'
+      }
+    ],
+    keywords: ['田间试验', '遗传育种', '土壤', '遥感', '数据分析']
+  },
+  {
+    id: 'art_design',
+    name: '视觉传达设计',
+    enName: 'Visual Communication Design',
+    category: '艺术类',
+    categoryColor: '#c0392b',
+    summary: '视觉传达设计不是“画画好看就行”。你要学设计史论、色彩构成、版式设计，用PS/AI/ID做真实商业项目，还要理解品牌策略和用户心理。作品集质量比考试成绩更重要，熬夜改稿是日常。',
+    warning: '软件只是工具，审美和设计思维才是核心竞争力。很多同学入学时软件操作熟练但缺乏设计素养，导致作品“技术到位但不好看”。设计史论和构成基础课不能跳过，它们是审美的根基。',
+    courses: [
+      {
+        name: '平面构成 / 色彩构成',
+        tasks: ['做点线面组合练习', '配色方案推演', '手绘大量草图'],
+        detail: '设计的“语法课”。平面构成训练你对点、线、面、肌理、节奏、对比等形式要素的敏感度；色彩构成要求你系统研究色相、明度、纯度的搭配规律，每组配色都要写出推导过程。这两门课的作业量极大，每周数十张手绘草图是常态。'
+      },
+      {
+        name: '字体设计 / 版式设计',
+        tasks: ['手绘原创字体', '做杂志排版', '调整字间距行距'],
+        detail: '字体设计要从笔画结构出发手绘一套完整的中文或英文字体，考虑可读性和风格统一性。版式设计要在InDesign中完成一本杂志或多页画册的排版：网格系统、文字层级、图文关系、留白节奏，每一毫米的调整都有设计意图。'
+      },
+      {
+        name: '品牌形象设计（VI）',
+        tasks: ['设计Logo', '制定VI规范手册', '做应用延展设计'],
+        detail: '为一个虚拟或真实品牌设计完整的视觉识别系统：标志设计→标准色/标准字→名片/信纸/包装/导视等应用设计，最后汇编成一本VI规范手册。这门课考察的是系统化设计能力——Logo好看只是起点，整套系统的一致性和可扩展性才是评分重点。'
+      },
+      {
+        name: '包装设计 / 书籍装帧',
+        tasks: ['做刀版图', '打样实物模型', '考虑印刷工艺'],
+        detail: '不是只在电脑上画效果图，要考虑真实的印刷和制作：出血位、专色、烫金、模切、纸张克重……设计完成后要打样做出实物模型，检查折叠是否准确、色彩是否还原。这门课让你理解“屏幕上的设计和拿在手里的成品之间有多大的差距”。'
+      },
+      {
+        name: '交互设计 / UI设计',
+        tasks: ['画用户流程图', '做低保真原型', '用Figma做高保真界面'],
+        detail: '从用户体验角度出发设计数字产品。先做用户研究和竞品分析，画出信息架构和用户流程图，用纸笔做低保真原型测试可用性，最后在Figma中完成高保真界面设计和交互原型。这门课和设计专业的传统技能形成互补，也是就业市场需求最大的方向之一。'
+      }
+    ],
+    keywords: ['构成', '版式', 'VI', '印刷', 'Figma']
+  },
+  {
+    id: 'materials',
+    name: '材料科学与工程',
+    enName: 'Materials Science & Engineering',
+    category: '工科类',
+    categoryColor: '#2d6a4f',
+    summary: '材料科学是研究“物质的结构与性能关系”的学科。你要学金相显微镜观察、X射线衍射分析、力学性能测试，理解为什么同一种金属经过不同热处理会有完全不同的强度。实验课占比极高，动手能力是核心要求。',
+    warning: '四大基础课（材科基、物理化学、固体物理、材料力学）理论深度大，同时实验课几乎贯穿每个学期。材料专业是典型的“理论+实验双轨并行”，只擅长其中一项很难学好。',
+    courses: [
+      {
+        name: '材料科学基础',
+        tasks: ['画晶体结构图', '分析相图', '解释强化机制'],
+        detail: '材料专业的“圣经”。从原子排列（晶格、晶系、密排面）讲到相变热力学（二元相图、杠杆定律），再到材料的强化机制（固溶强化、析出强化、细晶强化）。考试常考“给定合金成分和冷却路径，画出组织演变过程并解释性能变化”，需要同时掌握理论和图解能力。'
+      },
+      {
+        name: '材料力学性能测试',
+        tasks: ['做拉伸/冲击/硬度试验', '分析断口形貌', '写测试报告'],
+        detail: '亲手操作万能试验机做金属拉伸试验，记录载荷-位移曲线，计算屈服强度、抗拉强度和延伸率。用夏比冲击试验机测冲击韧性，用洛氏/维氏硬度计测硬度。断口分析要在扫描电镜（SEM）下观察断裂特征，判断是韧性断裂还是脆性断裂。'
+      },
+      {
+        name: '材料分析方法（XRD/SEM/TEM）',
+        tasks: ['做X射线衍射', '标定电子衍射花样', '分析微观组织'],
+        detail: 'X射线衍射（XRD）用于物相鉴定和晶胞参数精修，扫描电镜（SEM）观察表面形貌和成分分布，透射电镜（TEM）分析纳米级微观结构。每种仪器都有严格的操作规程和数据分析方法，实验报告要求完整的图谱标注和结果讨论。'
+      },
+      {
+        name: '金属材料热处理',
+        tasks: ['做淬火回火实验', '观察金相组织', '制定热处理工艺'],
+        detail: '将钢试样加热到不同温度保温后以不同速度冷却（水冷、油冷、空冷），然后磨制金相试样、腐蚀、在金相显微镜下观察马氏体、珠光体、贝氏体等组织形态。通过对比不同工艺下的组织和硬度，理解“热处理如何改变材料性能”这一核心命题。'
+      },
+      {
+        name: '材料综合实验 / 课程设计',
+        tasks: ['独立完成材料制备', '表征性能', '写完整实验论文'],
+        detail: '综合性最强的实践课。给定一个材料体系（如铝合金、陶瓷、高分子复合材料），从原料配比→成型工艺→烧结/固化→性能测试→结果分析全流程独立完成。最终输出一篇格式规范的实验论文，包含摘要、引言、实验方法、结果与讨论、结论，接近科研论文的写作标准。'
+      }
+    ],
+    keywords: ['金相', 'XRD', '热处理', '力学测试', '实验']
+  },
+  {
+    id: 'automation',
+    name: '自动化',
+    enName: 'Automation',
+    category: '工科类',
+    categoryColor: '#2d6a4f',
+    summary: '自动化是“万金油”工科：既要懂电路和单片机（硬件），又要会编程和算法（软件），还要掌握控制理论（数学）。这个专业的毕业生可以去做机器人、自动驾驶、工业自动化、嵌入式系统，就业面极宽。',
+    warning: '课程覆盖面广意味着每门课的深度可能不如对口专业，但广度本身就是优势。建议在大三明确一个细分方向（控制/机器人/嵌入式/AI）深入钻研，避免“什么都学过但什么都不精”。',
+    courses: [
+      {
+        name: '自动控制原理',
+        tasks: ['画根轨迹', '设计PID控制器', '用MATLAB仿真'],
+        detail: '自动化的灵魂课程。分析系统的稳定性（劳斯判据、奈奎斯特判据）、动态性能（超调量、调节时间）和稳态误差，设计校正装置使系统满足指标。MATLAB/Simulink仿真是标配实验，要能搭建控制系统模型并调参验证。这门课的数学要求很高，拉普拉斯变换和复变函数是基础工具。'
+      },
+      {
+        name: '嵌入式系统设计',
+        tasks: ['写ARM程序', '驱动传感器', '做实时操作系统移植'],
+        detail: '基于STM32或ARM Cortex-M系列开发板，用C语言编写底层驱动程序：GPIO控制、ADC采样、UART通信、定时器中断。进阶课要移植FreeRTOS或uC/OS实时操作系统，实现多任务调度。期末项目通常是独立完成一个嵌入式系统（如智能小车、环境监测终端），软硬件全部自己搞定。'
+      },
+      {
+        name: '机器人学 / 运动控制',
+        tasks: ['建DH坐标系', '做正逆运动学求解', '规划机械臂轨迹'],
+        detail: '从刚体运动和齐次变换矩阵出发，建立机械臂的DH参数模型，求解正运动学（已知关节角求末端位姿）和逆运动学（已知目标位姿求关节角）。用MATLAB Robotics Toolbox做仿真验证，有条件的话在真实机械臂上做实验。这门课是机器人方向的入门基石。'
+      },
+      {
+        name: 'PLC编程与工业控制',
+        tasks: ['写梯形图程序', '调试变频器', '做HMI人机界面'],
+        detail: '面向工业现场的核心技能。用西门子S7-1200或三菱FX系列PLC编写梯形图程序，控制电机启停、传送带运行、物料分拣等典型工业场景。配合触摸屏（HMI）做操作界面，用变频器调速。实训室里有真实的工业控制台，接线、编程、调试一条龙。'
+      },
+      {
+        name: '计算机视觉 / 机器学习',
+        tasks: ['用OpenCV做图像处理', '训练CNN分类器', '做目标检测'],
+        detail: '自动化与AI的交叉方向。用Python+OpenCV实现图像预处理、边缘检测、特征提取，用PyTorch/TensorFlow训练卷积神经网络做图像分类或目标检测。期末项目可以是：车牌识别系统、缺陷检测系统或手势识别交互系统，将控制理论和AI技术结合起来。'
+      }
+    ],
+    keywords: ['控制理论', '嵌入式', '机器人', 'PLC', 'MATLAB']
+  },
+  {
+    id: 'sociology',
+    name: '社会学',
+    enName: 'Sociology',
+    category: '文科类',
+    categoryColor: '#6b2d8b',
+    summary: '社会学是用科学方法研究社会现象的学科。你要做问卷调查、深度访谈、田野观察，用SPSS/Stata做统计分析，写出有数据支撑的社会研究报告。这不是“聊天谈心”的专业，而是严谨的社会科学研究训练。',
+    warning: '统计学是社会学的硬门槛：社会统计学、多元回归分析、抽样方法是必修，很多文科背景同学在这里感到吃力。同时田野调查需要走出校园接触真实社会，沟通能力和抗压能力同样重要。',
+    courses: [
+      {
+        name: '社会研究方法',
+        tasks: ['设计调查问卷', '做深度访谈', '写研究计划书'],
+        detail: '社会学的方法论核心课。你要学会将抽象的研究问题转化为可操作的调查方案：确定抽样框、设计问卷题目（避免诱导性提问）、制定访谈提纲、规划田野观察的记录方式。结课作业是一份完整的研究计划书，包括文献综述、研究假设、方法设计和预期成果。'
+      },
+      {
+        name: '社会统计学 / SPSS实操',
+        tasks: ['做描述统计', '跑回归分析', '解读统计表格'],
+        detail: '用SPSS或Stata处理调查数据：频数分布、交叉表、相关分析、多元线性回归、Logistic回归。重点不是“会点按钮”，而是能正确解读输出结果：回归系数代表什么？P值小于0.05意味着什么？模型的R²够不够？这些解读能力决定了你的研究是否可信。'
+      },
+      {
+        name: '社会学理论',
+        tasks: ['精读经典原著', '比较理论流派', '用理论分析现实问题'],
+        detail: '从马克思、韦伯、涂尔干三大经典理论家到当代的结构功能主义、冲突理论、符号互动论，系统梳理社会学理论脉络。考试不是背人名和书名，而是“用韦伯的科层制理论分析某组织的运作逻辑”或“比较涂尔干和马克思对自杀现象的不同解释”。'
+      },
+      {
+        name: '田野调查 / 质性研究',
+        tasks: ['进入社区做参与观察', '写田野笔记', '做扎根理论编码'],
+        detail: '走出校园进入真实社会场景（社区、工厂、学校、医院），进行为期数周的参与式观察和深度访谈。每天写详细的田野笔记，回来后对访谈转录文本做三级编码（开放编码→主轴编码→选择性编码），提炼核心范畴。这是社会学最具特色的研究方式，也是最考验耐心和洞察力的训练。'
+      },
+      {
+        name: '人口学 / 社会分层与流动',
+        tasks: ['分析人口普查数据', '计算生育率死亡率', '研究阶层固化'],
+        detail: '用国家统计局的人口普查数据和CGSS（中国综合社会调查）数据分析中国社会的不平等结构：教育获得、职业地位、收入差距的代际传递。课程作业通常是选取一个社会分层议题，用定量数据验证某个理论假设，写出规范的研究报告。'
+      }
+    ],
+    keywords: ['问卷', '访谈', 'SPSS', '田野调查', '理论']
+  },
+  {
+    id: 'english',
+    name: '英语语言文学',
+    enName: 'English Language & Literature',
+    category: '文科类',
+    categoryColor: '#6b2d8b',
+    summary: '英语专业不只是“学英语”。你要读莎士比亚原著、分析语言学理论、做英汉翻译实践，还要写英文学术论文。专四专八是硬指标，但真正的专业能力体现在能否用英语进行深度思考和学术表达。',
+    warning: '英语专业的阅读量远超预期：英美文学课每学期要读完数本英文原著（不是简写本），语言学课要读英文学术文献。如果入学时英语阅读速度和词汇量不足，前两年会非常吃力。',
+    courses: [
+      {
+        name: '综合英语 / 高级英语',
+        tasks: ['精读英文原版文章', '做课文分析', '写英文作文'],
+        detail: '不是四六级式的阅读理解，是对英文文本的深度分析：修辞手法、篇章结构、文化内涵、作者立场。每篇课文要花数小时预习，查生词、标注语法点、准备课堂讨论。写作课要求写议论文、说明文、叙事文等多种体裁，语法错误和内容空洞都会被扣分。'
+      },
+      {
+        name: '英美文学',
+        tasks: ['读英文原著', '写文学评论', '做文本细读分析'],
+        detail: '从乔叟、莎士比亚到狄更斯、福克纳、托尼·莫里森，按时代阅读英文文学经典。不是“讲故事梗概”，而是做close reading（文本细读）：分析隐喻、象征、叙事视角、反讽等文学技巧如何服务于主题表达。期末论文要求用英文撰写，引用原文并有独立的批评观点。'
+      },
+      {
+        name: '语言学导论',
+        tasks: ['分析英语音系', '做句法树形图', '比较英汉语言差异'],
+        detail: '用语言学理论分析英语本身：音位学和音系规则、形态学的构词分析、句法学的短语结构规则和转换生成语法、语义学的意义理论。这门课用英文教材和英文授课，对语言能力和抽象思维都是双重挑战。'
+      },
+      {
+        name: '英汉翻译理论与实践',
+        tasks: ['做文学翻译', '翻译政经文本', '写翻译评注'],
+        detail: '不是简单的“英译中”，是在理解翻译理论（奈达的功能对等、韦努蒂的异化归化）指导下的有意识翻译实践。文学翻译要传达原文的风格和情感，政经翻译要准确传达术语和政策含义。每次翻译作业要附翻译评注，解释关键翻译决策的理由。'
+      },
+      {
+        name: '英语学术写作',
+        tasks: ['写英文研究论文', '做文献综述', '遵循APA格式'],
+        detail: '用英文撰写符合国际学术规范的论文：选题→文献检索→提出论点→论证→结论，全程使用APA或MLA引用格式。这门课训练的是用英语进行学术思考的能力，而非单纯的语言技能。毕业论文（通常5000-8000英文单词）就是这门课能力的综合体现。'
+      }
+    ],
+    keywords: ['原著阅读', '文学评论', '翻译', '语言学', '英文写作']
+  },
+  {
+    id: 'ai',
+    name: '人工智能',
+    enName: 'Artificial Intelligence',
+    category: '工科类',
+    categoryColor: '#2d6a4f',
+    summary: '人工智能专业是近年新设的热门方向，核心是机器学习、深度学习、计算机视觉和自然语言处理。数学要求极高（线性代数、概率论、最优化），编程以Python为主，同时要理解算法背后的数学原理而非只会调包。',
+    warning: 'AI专业不等于“会用ChatGPT”。你要能从零推导反向传播算法、手写梯度下降、理解Transformer的注意力机制数学本质。只会调API不会推导公式的同学在核心课程中会非常吃力。',
+    courses: [
+      {
+        name: '机器学习',
+        tasks: ['手写线性回归', '实现SVM', '调参做交叉验证'],
+        detail: '从零实现经典算法：不用sklearn，用NumPy手写梯度下降实现线性/逻辑回归，推导并实现支持向量机的SMO算法，手动实现K-means聚类。理解每个算法的损失函数、优化目标和正则化项的数学含义。调包只是验证手段，手推公式才是考核重点。'
+      },
+      {
+        name: '深度学习',
+        tasks: ['搭建CNN/RNN', '训练图像分类器', '做模型压缩'],
+        detail: '用PyTorch或TensorFlow搭建卷积神经网络做图像分类、循环神经网络做序列建模。但不只是“搭积木”：要理解卷积运算的数学本质、BatchNorm的原理、残差连接为什么能缓解梯度消失。期末项目通常是在公开数据集（CIFAR-10/ImageNet子集）上达到指定精度，并分析模型的设计选择。'
+      },
+      {
+        name: '计算机视觉',
+        tasks: ['做目标检测', '实现图像分割', '训练GAN生成图像'],
+        detail: '从传统的SIFT/HOG特征到现代的YOLO/Faster R-CNN/Mask R-CNN，系统学习目标检测、语义分割、实例分割的技术演进。GAN（生成对抗网络）课上要实现DCGAN或StyleGAN，训练模型生成人脸或艺术风格图像。实验需要GPU资源，学校通常会提供云计算平台。'
+      },
+      {
+        name: '自然语言处理',
+        tasks: ['做文本分类', '训练BERT微调', '实现机器翻译'],
+        detail: '从Word2Vec词向量到Transformer架构，再到BERT/GPT预训练模型。课程作业包括：用LSTM做情感分析、微调BERT做命名实体识别、用Seq2Seq+Attention实现简单的机器翻译系统。要理解Self-Attention的计算过程和位置编码的作用，而不只是调用HuggingFace库。'
+      },
+      {
+        name: 'AI伦理与安全 / 前沿专题',
+        tasks: ['分析算法偏见', '做对抗攻击实验', '写AI治理报告'],
+        detail: '技术之外的必备素养。分析人脸识别中的种族偏见、推荐系统中的信息茧房、大模型的幻觉问题。对抗攻击实验要对训练好的模型施加微小扰动使其误分类，理解模型的脆弱性。结课作业是针对某个AI应用场景写一份伦理风险评估和治理建议报告。'
+      }
+    ],
+    keywords: ['机器学习', '深度学习', 'Python', '数学推导', 'GPU']
+  }  ,
+  {
+    id: 'gis',
+    name: '地理信息科学',
+    enName: 'Geographic Information Science',
+    category: '理科类',
+    categoryColor: '#1a6b8a',
+    summary: '地理信息科学（GIS）是地理学与计算机技术的深度融合专业。你要学会用ArcGIS/QGIS处理空间数据、用Python写地理分析脚本、用遥感影像解译地物，最终产出专业地图和空间分析报告。它不是"学画地图"，而是用数据科学的方法分析地球表面的一切现象。',
+    warning: '很多人以为GIS就是"画地图"，入学后发现要写大量Python/R代码、处理GB级遥感影像、掌握坐标系与投影变换的数学原理。测量实习要背着仪器在野外连续工作一周，数据处理到凌晨是常态。',
+    courses: [
+      {
+        name: 'GIS原理与ArcGIS操作',
+        tasks: ['处理矢量/栅格数据', '做空间叠加分析', '输出标准地图'],
+        detail: '核心工具课。在ArcGIS或QGIS中导入shapefile、做缓冲区分析、叠加分析、网络分析。典型作业：给定某城市POI数据，分析医院服务盲区；或根据坡度、土地利用、水源距离多因子叠加，选出最适合建设用地的区域。每张输出地图必须有规范的图名、图例、比例尺、指北针。'
+      },
+      {
+        name: '遥感原理与图像处理',
+        tasks: ['下载Landsat/Sentinel影像', '做波段组合', '解译地物类型'],
+        detail: '用ENVI或Python处理卫星遥感影像。下载免费的Landsat8或Sentinel-2影像后，做大气校正、波段组合（近红外+红+绿 = 标准假彩色）、植被指数（NDVI）计算，再用监督分类（最大似然/随机森林）把影像分成耕地、水体、建设用地、林地等类别，最后精度验证要求总体精度>85%。'
+      },
+      {
+        name: 'Python地理空间编程',
+        tasks: ['用GeoPandas处理数据', '写空间分析脚本', '做Web地图可视化'],
+        detail: '用Python的地理分析生态栈：GeoPandas处理矢量数据、Rasterio读写栅格、Shapely做几何计算、Folium/Leaflet做交互式Web地图。典型项目：抓取全国A级景区坐标，分析其与交通干线的空间关系，输出交互式可视化地图。数据量通常在百万条记录级别，需要考虑空间索引优化。'
+      },
+      {
+        name: '测量学与大地测量实习',
+        tasks: ['操作全站仪', '做控制测量', '处理GPS/RTK数据'],
+        detail: '两周野外实习：用全站仪做导线测量和地形图测绘，用GPS/RTK采集地物坐标。每天背着10斤仪器在校园或野外测量，晚上回来内业处理数据、绘制地形图。坐标闭合差必须满足规范要求，否则重测。这门课直接检验你的细心程度和体力。'
+      },
+      {
+        name: '空间数据库与Web地图开发',
+        tasks: ['建PostGIS空间数据库', '写SQL空间查询', '发布地图瓦片服务'],
+        detail: '用PostgreSQL+PostGIS存储和查询空间数据，写含ST_Distance、ST_Intersects等空间函数的SQL语句。用GeoServer发布WMS/WFS地图服务，前端用Leaflet.js或OpenLayers调用。课程大作业通常是做一个完整的WebGIS应用：前端地图展示+后端空间查询+数据库支撑，三层架构全部自己搭建。'
+      }
+    ],
+    keywords: ['ArcGIS', '遥感', 'Python', '空间分析', '地图']
+  }
+];
+
+// ─── Build categories from data ───
+const categories = ['全部', ...new Set(MAJORS.map(m => m.category))];
+let currentFilter = 'all';
+let currentSearch = '';
+
+// ─── Count stats ───
+const totalCourses = MAJORS.reduce((acc, m) => acc + m.courses.length, 0);
+const totalTasks = MAJORS.reduce((acc, m) => acc + m.courses.reduce((a, c) => a + c.tasks.length, 0), 0);
+
+function animateCounter(el, target, duration) {
+  let start = 0;
+  const step = target / (duration / 16);
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) { el.textContent = target; clearInterval(timer); }
+    else el.textContent = Math.floor(start);
+  }, 16);
+}
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    animateCounter(document.getElementById('counter-majors'), MAJORS.length, 800);
+    animateCounter(document.getElementById('counter-courses'), totalCourses, 1000);
+    animateCounter(document.getElementById('counter-tasks'), totalTasks, 1200);
+  }, 300);
+  buildFilterTags();
+  renderCards();
+});
+
+function buildFilterTags() {
+  const container = document.getElementById('filterTags');
+  container.innerHTML = '<button class="filter-btn active" data-cat="all" onclick="filterByCategory(this,\'all\')">全部</button>';
+  categories.slice(1).forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.dataset.cat = cat;
+    btn.textContent = cat;
+    btn.onclick = function() { filterByCategory(this, cat); };
+    container.appendChild(btn);
+  });
+}
+
+function filterByCategory(btn, cat) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentFilter = cat;
+  renderCards();
+}
+
+function doSearch() {
+  currentSearch = document.getElementById('searchInput').value.trim().toLowerCase();
+  renderCards();
+}
+
+function getFilteredMajors() {
+  return MAJORS.filter(m => {
+    const catMatch = currentFilter === 'all' || m.category === currentFilter;
+    if (!currentSearch) return catMatch;
+    const searchStr = (m.name + m.enName + m.category + m.keywords.join('') +
+      m.courses.map(c => c.name + c.tasks.join('') + c.detail).join('')).toLowerCase();
+    return catMatch && searchStr.includes(currentSearch);
+  });
+}
+
+function renderCards() {
+  const grid = document.getElementById('cardsGrid');
+  const majors = getFilteredMajors();
+  if (majors.length === 0) {
+    grid.innerHTML = '<div class="empty-state"><div class="empty-icon">📂</div><p>没有找到匹配的专业</p><p style="margin-top:8px;font-size:12px;opacity:0.6">试试换个关键词</p></div>';
+    return;
+  }
+  grid.innerHTML = majors.map((m, idx) => renderCard(m, idx)).join('');
+}
+
+function renderCard(m, idx) {
+  const previewCourses = m.courses.slice(0, 3);
+  const extraCourses = m.courses.slice(3);
+
+  const courseHTML = (courses) => courses.map((c, i) => `
+    <div class="course-item">
+      <div class="course-num">${i + 1}</div>
+      <div class="course-info">
+        <div class="course-name">${c.name}</div>
+        <div class="course-tasks">
+          ${c.tasks.map(t => `<span class="task-chip">${t}</span>`).join('')}
+        </div>
+        <div class="course-desc">${c.detail.substring(0, 60)}…</div>
+      </div>
+    </div>
+  `).join('');
+
+  const extraHTML = extraCourses.length ? `
+    <div class="courses-extra" id="extra-${m.id}">
+      ${courseHTML(extraCourses.map((c, i) => ({...c, _offset: i + 3})))}
+    </div>
+  ` : '';
+
+  return `
+    <div class="major-card" style="--category-color:${m.categoryColor}" onclick="openModal('${m.id}')">
+      <div class="card-stamp">${m.category.replace('类', '')}</div>
+      <div class="card-header">
+        <div class="card-category-tag">${m.category}</div>
+        <div class="card-major-name">${m.name}</div>
+        <div class="card-subtitle">${m.enName}</div>
+      </div>
+      <div class="card-courses">
+        <div class="courses-label">核心课程 · 真实任务</div>
+        ${courseHTML(previewCourses)}
+        ${extraHTML}
+      </div>
+      <div class="card-footer">
+        <div class="card-keyword-list">
+          ${m.keywords.slice(0,3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
+        </div>
+        ${extraCourses.length ? `
+          <button class="card-expand-btn" id="expandBtn-${m.id}" onclick="toggleExtra(event,'${m.id}')">
+            展开更多
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+        ` : `<span style="font-size:11px;color:var(--ink-light);font-family:'Noto Sans SC',sans-serif">点击查看详情</span>`}
+      </div>
+    </div>
+  `;
+}
+
+function toggleExtra(e, id) {
+  e.stopPropagation();
+  const extra = document.getElementById('extra-' + id);
+  const btn = document.getElementById('expandBtn-' + id);
+  const isOpen = extra.classList.toggle('open');
+  btn.classList.toggle('expanded', isOpen);
+  btn.innerHTML = isOpen
+    ? '收起 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>'
+    : '展开更多 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>';
+}
+
+function openModal(id) {
+  const m = MAJORS.find(x => x.id === id);
+  if (!m) return;
+  const box = document.getElementById('modalBox');
+  box.style.setProperty('--modal-category-color', m.categoryColor);
+  box.style.borderTopColor = m.categoryColor;
+  document.getElementById('modalCatBadge').textContent = m.category;
+  document.getElementById('modalCatBadge').style.color = m.categoryColor;
+  document.getElementById('modalCatBadge').style.borderColor = m.categoryColor;
+  document.getElementById('modalMajorName').textContent = m.name;
+  document.getElementById('modalEnName').textContent = m.enName;
+  document.getElementById('modalSummary').textContent = m.summary;
+
+  const coursesEl = document.getElementById('modalCourses');
+  coursesEl.innerHTML = m.courses.map((c, i) => `
+    <div class="modal-course-item">
+      <div class="modal-course-num">${i + 1}</div>
+      <div class="modal-course-content">
+        <div class="modal-course-name">${c.name}</div>
+        <div class="modal-task-list">
+          ${c.tasks.map(t => `<span class="modal-task-chip">${t}</span>`).join('')}
+        </div>
+        <div class="modal-course-detail">${c.detail}</div>
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('modalWarning').textContent = m.warning;
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('modalOverlay')) closeModalDirect();
+}
+function closeModalDirect() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModalDirect(); });
+</script>
+</body>
+</html>
